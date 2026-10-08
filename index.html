@@ -1,0 +1,2578 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-title" content="伏見集荷">
+<link rel="apple-touch-icon" id="appleIcon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" id="favIcon" href="data:image/png;base64,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">
+<title>コース検索（伏見集荷）</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    padding: 15px;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  .header-title {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+  /* === Claude Code のキャラクター（ヘッダー左上） === */
+  .cc-wrap { width: 62px; height: 40px; flex-shrink: 0; display: flex; justify-content: center; }
+  .cc-mascot { display: flex; flex-direction: column; align-items: center; gap: 3px; text-decoration: none; padding-top: 4px; }
+  .cc-mascot svg { width: 36px; height: 27px; shape-rendering: crispEdges; overflow: visible; transform-origin: center; }
+  /* 歩く・立ち止まる・手足の動きは、下のスクリプト（ccMascot）で1コマずつ動かしている */
+  .cc-mascot .cc-label { font-family: -apple-system, "Segoe UI", sans-serif; font-size: 7px; letter-spacing: 0.05em; color: #d97757; opacity: 0.8; white-space: nowrap; }
+  .cc-body { fill: #d97757; }
+  .cc-eye { fill: #1a1612; transform-box: fill-box; transform-origin: center; }
+  /* ときどきまばたき */
+  .cc-eye { animation: cc-blink 4s infinite; }
+  @keyframes cc-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+  h2 {
+    font-size: 20px;
+    color: #db2828;
+    margin: 0;
+  }
+  .settings-btn {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .search-container {
+    position: sticky;
+    top: 0;
+    background-color: #f0f2f5;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    z-index: 50;
+  }
+  .course-filter-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .course-filter-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+  }
+  .course-filter-select {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+  }
+  .course-filter-select:focus {
+    outline: none;
+    border-color: #db2828;
+  }
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    padding-right: 90px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #db2828;
+  }
+  .clear-btn {
+    position: absolute;
+    right: 8px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+  }
+  .clear-btn:active {
+    background-color: #333;
+    transform: translateY(1px);
+  }
+
+  /* ===== マップジャンプバー（検索欄と一緒に追従） ===== */
+  .map-jump-bar {
+    display: none;
+    background: linear-gradient(135deg, #1a237e, #283593);
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  }
+  .map-jump-bar .bar-label {
+    color: rgba(255,255,255,0.8);
+    font-size: 11px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .map-jump-bar .bar-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .map-jump-bar .bar-buttons button {
+    flex: 1;
+    padding: 10px 4px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  }
+  .map-jump-bar .bar-buttons button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  }
+  .map-btn-apple { background: #f5f5f5; color: #333; }
+  .map-btn-google { background: #e8f5e9; color: #2e7d32; }
+  .map-btn-yahoo { background: #fff3e0; color: #e65100; }
+  .map-btn-icon { font-size: 18px; }
+  .map-jump-bar .checked-count {
+    color: #ffeb3b;
+    font-weight: bold;
+  }
+
+  /* ===== 結果アイテム ===== */
+  .result-item {
+    background: #fff;
+    padding: 12px 12px 12px 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.15s;
+  }
+  .result-item.checked {
+    background: #e3f2fd;
+    border-left: 4px solid #1a237e;
+  }
+  .result-checkbox {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    accent-color: #1a237e;
+    cursor: pointer;
+  }
+  .town-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-right: 4px;
+    min-width: 0;
+  }
+  .town-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    word-break: break-all;
+  }
+  .edited-mark {
+    font-size: 12px;
+    color: #db2828;
+    margin-top: 2px;
+    font-weight: bold;
+  }
+  .action-area {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .course-badge {
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    min-width: 32px;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+  }
+  .edit-btn {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .map-single-btn {
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .map-single-btn:active {
+    background: #0d1757;
+  }
+  .empty-message {
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* ===== モーダル ===== */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  .modal-box h3 { margin-top: 0; color: #111; }
+  .modal-select {
+    font-size: 20px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .modal-buttons button {
+    flex: 1;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btn-cancel { background: #e0e0e0; color: #333; }
+  .btn-save { background: #db2828; color: #fff; }
+  .btn-primary { background: #1E88E5; color: #fff; margin-bottom: 10px; width: 100%; }
+  .stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  .stat-chip {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+
+  /* ===== マップ選択モーダル ===== */
+  .map-modal-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    width: 85%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  .map-modal-box h3 {
+    margin-top: 0;
+    color: #1a237e;
+    font-size: 16px;
+  }
+  .map-modal-box .map-target-name {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+    background: #f5f5f5;
+    padding: 8px;
+    border-radius: 8px;
+    word-break: break-all;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+  .map-choice-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .map-choice-btn:active { transform: translateY(1px); }
+  .map-choice-apple { background: #f5f5f5; color: #333; }
+  .map-choice-google { background: #e8f5e9; color: #1b5e20; }
+  .map-choice-yahoo { background: #fff3e0; color: #e65100; }
+  .map-choice-icon { font-size: 22px; }
+  .banchi-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .banchi-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+  }
+  .banchi-input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .banchi-input:focus {
+    outline: none;
+    border-color: #1a237e;
+  }
+  .map-full-address {
+    font-size: 13px;
+    color: #1a237e;
+    background: #e8eaf6;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    word-break: break-all;
+    min-height: 18px;
+    font-weight: bold;
+  }
+
+  /* ===== 複数住所リストモーダル ===== */
+  .multi-list {
+    max-height: 50vh;
+    overflow-y: auto;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  .multi-item-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 2px solid #c5cae9;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a237e;
+    text-align: left;
+    cursor: pointer;
+    word-break: break-all;
+  }
+  .multi-item-btn.visited {
+    background: #eeeeee;
+    border-color: #ddd;
+    color: #999;
+  }
+  .multi-item-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    background: #1a237e;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+  }
+  .multi-item-btn.visited .multi-item-num { background: #bbb; }
+  .multi-note {
+    font-size: 12px;
+    color: #666;
+    margin: 0 0 10px;
+  }
+
+  /* ===== ドラクエ風オープニング ===== */
+  #opening-screen {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  #opening-screen.fade-out {
+    animation: openingFadeOut 1.2s forwards;
+    pointer-events: none;
+  }
+  @keyframes openingFadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  .op-stars {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+  }
+  .op-star {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+  }
+  @keyframes twinkle {
+    0% { opacity: 0.2; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.5); }
+  }
+  .op-logo-wrap {
+    text-align: center;
+    z-index: 1;
+  }
+  .op-subtitle {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    animation: opFadeIn 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+  }
+  .op-title-jp {
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow:
+      0 0 10px #ffd700,
+      0 0 30px #ff8c00,
+      2px 2px 0 #8b6914;
+    letter-spacing: 2px;
+    animation: opFadeIn 1.2s ease forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+    line-height: 1.4;
+  }
+  .op-title-sub {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #aed6f1;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    animation: opFadeIn 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1.0s;
+  }
+  .op-hero {
+    font-size: 64px;
+    margin: 24px 0 8px;
+    animation: opFadeIn 0.8s ease forwards, heroFloat 2s ease-in-out infinite alternate;
+    opacity: 0;
+    animation-delay: 1.2s, 2s;
+    filter: hue-rotate(310deg) saturate(5) brightness(1.1);
+  }
+  @keyframes heroFloat {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-8px); }
+  }
+  .op-tagline {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #7dcea0;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    animation: opFadeIn 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1.6s;
+  }
+  .op-divider {
+    width: 160px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ffd700, transparent);
+    margin: 20px auto;
+    animation: opFadeIn 0.8s ease forwards;
+    opacity: 0;
+    animation-delay: 1.4s;
+  }
+  .op-press {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    animation: opFadeIn 0.5s ease forwards, blink 1.2s step-start infinite;
+    opacity: 0;
+    animation-delay: 2.2s;
+    cursor: pointer;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  @keyframes opFadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .op-bottom-text {
+    position: absolute;
+    bottom: 30px;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    color: #444;
+    letter-spacing: 2px;
+    animation: opFadeIn 1s ease forwards;
+    opacity: 0;
+    animation-delay: 2.0s;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== ドラクエ風オープニング画面 ===== -->
+<div id="opening-screen" onclick="closeOpening(true)">
+  <div class="op-stars" id="opStars"></div>
+  <div class="op-logo-wrap">
+    <div class="op-subtitle">FUSHIMI POST OFFICE</div>
+    <div class="op-title-jp">伏見集荷<br>コース検索</div>
+    <div class="op-title-sub">～ THE DELIVERY QUEST ～</div>
+    <div class="op-hero">🚐</div>
+    <div class="op-divider"></div>
+    <div class="op-tagline">▶ 今日も集荷の旅へ出発！</div>
+    <div class="op-press">▼ タップしてはじめる ▼</div>
+  </div>
+  <div class="op-bottom-text">© FUSHIMI POSTMAN GUILD</div>
+</div>
+
+
+  <div class="header-container">
+    <div class="header-title">
+      <div class="cc-wrap">
+        <a class="cc-mascot" href="https://claude.com/claude-code" target="_blank" rel="noopener" title="Claude Code で作成" aria-label="Claude Code で作成">
+          <!-- 1マス＝1ドットのドット絵（横12×縦8マス：体6段＋足2段） -->
+          <svg viewBox="0 -1 12 9" aria-hidden="true">
+            <!-- 足（左から順に4本）。上げるときは高さを1マスにする -->
+            <rect class="cc-body cc-leg" x="2" y="6" width="1" height="2"/>
+            <rect class="cc-body cc-leg" x="4" y="6" width="1" height="2"/>
+            <rect class="cc-body cc-leg" x="7" y="6" width="1" height="2"/>
+            <rect class="cc-body cc-leg" x="9" y="6" width="1" height="2"/>
+            <g class="cc-hop">
+              <rect class="cc-body" x="2" y="0" width="8" height="6"/>
+              <rect class="cc-body cc-arm-l" x="0" y="2" width="2" height="2"/>
+              <rect class="cc-body cc-arm-r" x="10" y="2" width="2" height="2"/>
+              <rect class="cc-eye" x="3" y="1" width="1" height="1"/>
+              <rect class="cc-eye" x="8" y="1" width="1" height="1"/>
+            </g>
+          </svg>
+          <span class="cc-label">Claude Code</span>
+        </a>
+      </div>
+      <h2 style="font-size:17px; line-height:1.3;">🚐 コース検索<span style="white-space:nowrap;">（伏見集荷）</span></h2>
+    </div>
+    <button class="settings-btn" onclick="openSettings()">⚙️ データ管理</button>
+  </div>
+
+  <div class="stats-bar">
+    <span class="stat-chip" style="background:#E53935;">1コース</span>
+    <span class="stat-chip" style="background:#1E88E5;">2コース</span>
+    <span class="stat-chip" style="background:#43A047;">3コース</span>
+    <span class="stat-chip" style="background:#FB8C00;">4コース</span>
+    <span class="stat-chip" style="background:#8E24AA;">5コース</span>
+    <span class="stat-chip" style="background:#00897B;">6コース</span>
+    <span class="stat-chip" style="background:#D81B60;">7コース</span>
+  </div>
+
+  <div class="search-container">
+    <div class="input-wrapper">
+      <input type="text" id="searchInput" placeholder="町名の一部を入力">
+      <button type="button" id="clearBtn" class="clear-btn">クリア</button>
+    </div>
+    <div class="course-filter-row">
+      <label class="course-filter-label" for="courseFilter">コース検索</label>
+      <select id="courseFilter" class="course-filter-select">
+        <option value="">-- すべて --</option>
+        <option value="1">1コース</option>
+        <option value="2">2コース</option>
+        <option value="3">3コース</option>
+        <option value="4">4コース</option>
+        <option value="5">5コース</option>
+        <option value="6">6コース</option>
+        <option value="7">7コース</option>
+        <option value="確認">確認（未割り当て）</option>
+      </select>
+    </div>
+
+    <!-- 複数チェック時のマップジャンプバー（検索欄と一緒に追従） -->
+    <div id="mapJumpBar" class="map-jump-bar">
+      <div class="bar-label">✅ <span id="checkedCount">0</span>件 選択中 → まとめて地図で開く</div>
+      <div class="bar-buttons">
+        <button class="map-btn-apple" onclick="jumpCheckedToMap('apple')">
+          <span class="map-btn-icon">🍎</span>Apple
+        </button>
+        <button class="map-btn-google" onclick="jumpCheckedToMap('google')">
+          <span class="map-btn-icon">📍</span>Google
+        </button>
+        <button class="map-btn-yahoo" onclick="jumpCheckedToMap('yahoo')">
+          <span class="map-btn-icon">🗾</span>Yahoo!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="resultArea">
+    <div class="empty-message">検索したい町名を入力してください。</div>
+  </div>
+
+  <!-- コース修正モーダル -->
+  <div id="editModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modalTownName">町名</h3>
+      <p style="color:#555; font-size:14px; margin-bottom:15px;">担当コースを選んでください</p>
+
+      <select id="modalCourseSelect" class="modal-select">
+        <option value="1">1 コース</option>
+        <option value="2">2 コース</option>
+        <option value="3">3 コース</option>
+        <option value="4">4 コース</option>
+        <option value="5">5 コース</option>
+        <option value="6">6 コース</option>
+        <option value="7">7 コース</option>
+        <option value="">(リセット: 自動判定に戻す)</option>
+      </select>
+
+      <div class="modal-buttons">
+        <button class="btn-cancel" onclick="closeEditModal()">キャンセル</button>
+        <button class="btn-save" onclick="saveEditModal()">保存する</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- マップ選択モーダル（単体クリック時） -->
+  <div id="mapSelectModal" class="modal-overlay">
+    <div class="map-modal-box">
+      <h3>🗺️ 地図アプリで開く</h3>
+      <div id="mapTargetName" class="map-target-name"></div>
+      <div class="banchi-row">
+        <label class="banchi-label" for="banchiInput">番地（任意）</label>
+        <input type="text" id="banchiInput" class="banchi-input" placeholder="例: 1-2-3" inputmode="decimal" autocomplete="off">
+      </div>
+      <div id="mapFullAddress" class="map-full-address"></div>
+      <button class="map-choice-btn map-choice-apple" onclick="openMapApp('apple')">
+        <span class="map-choice-icon">🍎</span> Appleマップ
+      </button>
+      <button class="map-choice-btn map-choice-google" onclick="openMapApp('google')">
+        <span class="map-choice-icon">📍</span> Googleマップ
+      </button>
+      <button class="map-choice-btn map-choice-yahoo" onclick="openMapApp('yahoo')">
+        <span class="map-choice-icon">🗾</span> Yahoo!マップ
+      </button>
+      <button class="btn-cancel" style="width:60%; margin:10px auto 0; padding:12px; display:block; border:none; border-radius:8px; font-size:15px; font-weight:bold; cursor:pointer;" onclick="closeMapSelectModal()">閉じる</button>
+    </div>
+  </div>
+
+  <!-- 複数住所リストモーダル（Apple / Yahoo! でまとめて開くとき） -->
+  <div id="multiMapModal" class="modal-overlay">
+    <div class="map-modal-box">
+      <h3 id="multiMapTitle">🗺️ 順番に開く</h3>
+      <p class="multi-note">タップした住所が地図アプリで開きます。開いた住所はグレーになります。</p>
+      <div id="multiMapList" class="multi-list"></div>
+      <button class="btn-cancel" style="width:60%; margin:0 auto; padding:12px; display:block; border:none; border-radius:8px; font-size:15px; font-weight:bold; cursor:pointer;" onclick="closeMultiMapModal()">閉じる</button>
+    </div>
+  </div>
+
+  <!-- 設定モーダル -->
+  <div id="settingsModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3>データバックアップ</h3>
+      <p style="font-size:13px; color:#666; text-align:left;">
+        変更したコースの記録をiPhone内に「ファイル」として保存・復元できます。
+      </p>
+
+      <button class="modal-buttons btn-primary" style="padding:14px;" onclick="exportDataToFile()">📤 ファイルとして保存</button>
+      <button class="modal-buttons btn-cancel" style="padding:14px; margin-bottom:20px; width:100%;" onclick="triggerImport()">📥 ファイルから復元</button>
+      <input type="file" id="fileInput" accept=".json,application/json" style="display:none;">
+
+      <button class="btn-cancel" style="width:50%; margin:0 auto; padding:10px;" onclick="closeSettings()">閉じる</button>
+    </div>
+  </div>
+
+<script>
+
+  // ===== オープニング画面 =====
+  function generateStars() {
+    const container = document.getElementById('opStars');
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('div');
+      star.className = 'op-star';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.animationDelay = (Math.random() * 2) + 's';
+      star.style.animationDuration = (1 + Math.random() * 2) + 's';
+      star.style.width = star.style.height = (1 + Math.random() * 2) + 'px';
+      container.appendChild(star);
+    }
+  }
+  generateStars();
+
+  // ファンファーレ的な起動音
+  function sfxOpening() {
+    playTone(262, 0.12, 'square', 0.10, 0.0);
+    playTone(330, 0.12, 'square', 0.10, 0.12);
+    playTone(392, 0.12, 'square', 0.10, 0.24);
+    playTone(523, 0.20, 'square', 0.12, 0.36);
+    playTone(659, 0.10, 'square', 0.10, 0.58);
+    playTone(784, 0.10, 'square', 0.10, 0.68);
+    playTone(1047, 0.10, 'square', 0.12, 0.78);
+    playTone(1319, 0.30, 'triangle', 0.14, 0.88);
+  }
+
+  // 2回タップ・自動クローズとの重複で二重に鳴らないようにする
+  let openingClosed = false;
+  function closeOpening(withSound) {
+    if (openingClosed) return;
+    openingClosed = true;
+    if (withSound) sfxOpening();
+    const screen = document.getElementById('opening-screen');
+    screen.classList.add('fade-out');
+    setTimeout(() => {
+      screen.style.display = 'none';
+    }, 1200);
+  }
+
+  // 一定時間後に自動で閉じる（10秒）。タップ操作ではないので音は鳴らさない
+  setTimeout(() => closeOpening(false), 10000);
+
+  // ========== ドラクエ風 効果音 (Web Audio API) ==========
+  const AudioCtx = window.AudioContext || window.webkitAudioContext;
+  let audioCtx = null;
+  function getAudioCtx() {
+    if (!AudioCtx) return null;
+    if (!audioCtx) audioCtx = new AudioCtx();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    return audioCtx;
+  }
+
+  function playTone(freq, duration, type, volume, delay) {
+    try {
+      const ctx = getAudioCtx();
+      if (!ctx) return;
+      const t = ctx.currentTime + (delay || 0);
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = type || 'square';
+      osc.frequency.setValueAtTime(freq, t);
+      gain.gain.setValueAtTime(volume || 0.12, t);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + duration);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(t);
+      osc.stop(t + duration);
+    } catch (e) {
+      // 音が出せない環境でもアプリは動かす
+    }
+  }
+
+  function sfxType() {
+    playTone(880, 0.06, 'square', 0.08, 0);
+    playTone(1200, 0.06, 'square', 0.06, 0.04);
+  }
+  function sfxFound() {
+    playTone(523, 0.08, 'square', 0.10, 0);
+    playTone(659, 0.08, 'square', 0.10, 0.07);
+    playTone(784, 0.12, 'square', 0.10, 0.14);
+  }
+  function sfxNotFound() {
+    playTone(330, 0.15, 'square', 0.10, 0);
+    playTone(262, 0.2, 'square', 0.08, 0.12);
+  }
+  function sfxTap() {
+    playTone(660, 0.05, 'square', 0.10, 0);
+    playTone(880, 0.08, 'square', 0.08, 0.04);
+  }
+  function sfxOpen() {
+    playTone(523, 0.1, 'square', 0.10, 0);
+    playTone(659, 0.1, 'square', 0.10, 0.08);
+    playTone(784, 0.1, 'square', 0.10, 0.16);
+    playTone(1047, 0.2, 'square', 0.12, 0.24);
+  }
+  function sfxSave() {
+    playTone(523, 0.1, 'square', 0.12, 0);
+    playTone(659, 0.1, 'square', 0.12, 0.1);
+    playTone(784, 0.1, 'square', 0.12, 0.2);
+    playTone(1047, 0.15, 'square', 0.14, 0.3);
+    playTone(1319, 0.15, 'square', 0.14, 0.4);
+    playTone(1568, 0.25, 'triangle', 0.12, 0.5);
+  }
+  function sfxCancel() {
+    playTone(440, 0.08, 'square', 0.08, 0);
+    playTone(349, 0.12, 'square', 0.06, 0.06);
+  }
+  function sfxClear() {
+    playTone(784, 0.06, 'square', 0.08, 0);
+    playTone(523, 0.1, 'square', 0.06, 0.05);
+  }
+  function sfxFanfare() {
+    playTone(523, 0.12, 'square', 0.12, 0);
+    playTone(523, 0.12, 'square', 0.12, 0.12);
+    playTone(523, 0.12, 'square', 0.12, 0.24);
+    playTone(523, 0.3, 'square', 0.12, 0.36);
+    playTone(415, 0.12, 'square', 0.12, 0.36);
+    playTone(466, 0.12, 'square', 0.12, 0.48);
+    playTone(523, 0.12, 'square', 0.12, 0.6);
+    playTone(466, 0.08, 'square', 0.10, 0.72);
+    playTone(523, 0.35, 'square', 0.14, 0.8);
+  }
+  function sfxWarp() {
+    playTone(262, 0.06, 'square', 0.10, 0);
+    playTone(330, 0.06, 'square', 0.10, 0.05);
+    playTone(392, 0.06, 'square', 0.10, 0.10);
+    playTone(523, 0.06, 'square', 0.10, 0.15);
+    playTone(659, 0.06, 'square', 0.10, 0.20);
+    playTone(784, 0.06, 'square', 0.10, 0.25);
+    playTone(1047, 0.15, 'triangle', 0.12, 0.30);
+  }
+
+  // ========== データ ==========
+  const courseColors = {
+    "1": "#E53935", "2": "#1E88E5", "3": "#43A047", "4": "#FB8C00",
+    "5": "#8E24AA", "6": "#00897B", "7": "#D81B60",
+    "確認": "#757575"
+  };
+
+  const townCourseMap = {
+
+    // ===== あ =====
+    "伏見区相深町": 1,
+    "伏見区青池町": 2,
+    "伏見区秋ノ山町": 2,
+    "伏見区安芸山": 6,
+    "伏見区小豆屋町": 3,
+    // 「伏見区東町」が5と6の2回登録されていたため、久我の東町（5コース）を分けました
+    "伏見区東町（久我）": 5,
+    "伏見区鐙ヶ谷町": 1,
+    "伏見区阿波橋町": 4,
+    "伏見区安信町": 6,
+    // ===== い =====
+    "伏見区井伊掃部西町": 3,
+    "伏見区井伊掃部東町": 3,
+    "伏見区伊賀": 6,
+    "伏見区池田屋敷町": 4,
+    "伏見区池ノ内町": 1,
+    "伏見区飯食町": 1,
+    "伏見区飯食山町": 1,
+    "伏見区石橋町": 1,
+    "伏見区石原町": 5,
+    "伏見区石屋町": 3,
+    "伏見区和泉": 6,
+    "伏見区和泉屋": 4,
+    "伏見区板倉周防": 6,
+    "伏見区一ノ坪町": 1,
+    "伏見区一本木": 4,
+    "伏見区因幡": 6,
+    "伏見区稲荷榎木橋町": 1,
+    "伏見区稲荷御前町": 1,
+    "伏見区稲荷鳥居前町": 1,
+    "伏見区稲荷中之町": 1,
+    "伏見区稲荷山官有地": 1,
+    "伏見区伊庭": 6,
+    "伏見区今在家町": 1,
+    "伏見区今町": 3,
+    "伏見区岩山町": 6,
+    // ===== う =====
+    "伏見区魚屋町": 3,
+    "伏見区内畑町": 1,
+    "伏見区馬谷町": 1,
+    // ===== え =====
+    "伏見区越後屋敷町": 1,
+    "伏見区越前町": 3,
+    "伏見区榎町": 3,
+    "伏見区恵美酒町": 4,
+    "伏見区海老屋町": 3,
+    // ===== お =====
+    "伏見区扇ヶ原町": 1,
+    "伏見区大河原": 3,
+    "伏見区大蔵": 6,
+    "伏見区大阪町": 3,
+    "伏見区大島": 6,
+    "伏見区大島屋敷町": 1,
+    "伏見区大谷町": 1,
+    "伏見区大津町": 6,
+    "伏見区大野": 4,
+    "伏見区大宮町": 4,
+    "伏見区大山": 1,
+    "伏見区御駕籠町": 3,
+    "伏見区ヲカヤ町": 1,
+    "伏見区桶ノ井町": 1,
+    "伏見区長田町": 4,
+    "伏見区御旅町": 5,
+    "伏見区常屋町": 4,
+    "伏見区表町": 3,
+    // ===== か =====
+    "伏見区開土口町": 1,
+    "伏見区開土町": 1,
+    "伏見区加賀屋敷町": 1,
+    "伏見区加賀屋町": 2,
+    "伏見区柿木浜町": 3,
+    "伏見区柿ノ本町": 4,
+    "伏見区景勝町": 2,
+    "伏見区鍛冶屋町": 3,
+    "伏見区過書町": 4,
+    "伏見区梶原町": 4,
+    "伏見区片桐町": 3,
+    "伏見区片原町": 3,
+    "伏見区金井戸島": 3,
+    "伏見区金井戸島町": 4,
+    "伏見区金森出雲": 6,
+    "桃山町金森出雲": 6,
+    "伏見区紙子屋町": 3,
+    "伏見区上神泉苑町": 3,
+    "伏見区上中町": 3,
+    "伏見区上ノ浜町": 4,
+    "伏見区上三栖町": 4,
+    "伏見区上横縄町": 1,
+    "伏見区鴨川町": 5,
+    "伏見区雁金町": 3,
+    "伏見区狩賀町": 2,
+    "伏見区枯木町": 1,
+    "伏見区川久保町": 3,
+    "伏見区川東町": 4,
+    "伏見区革屋町": 4,
+    "伏見区瓦町": 1,
+    "伏見区願成町": 1,
+    "伏見区勧進橋町": 1,
+    "伏見区観音寺町": 3,
+    "伏見区上林町": 3,
+    // ===== き =====
+    "伏見区菊屋町": 2,
+    "伏見区岸ノ下町": 4,
+    "伏見区北尼崎町": 3,
+    "伏見区北円面田町": 4,
+    "伏見区北鍵屋町": 1,
+    "伏見区北三町": 4,
+    "伏見区北城堀": 4,
+    "伏見区北新町": 1,
+    "伏見区北寝小屋町": 4,
+    "伏見区北ノ口町": 2,
+    "伏見区北浜町": 3,
+    "伏見区北蓮池町": 1,
+    "伏見区北端町": 2,
+    "伏見区キトロ町": 1,
+    "伏見区木下屋敷町": 4,
+    "伏見区貴船": 4,
+    "伏見区京橋町": 3,
+    "伏見区京町　1丁目": 3,
+    "伏見区京町　2丁目": 3,
+    "伏見区京町　3丁目": 3,
+    "伏見区京町　4丁目": 3,
+    "伏見区京町　5丁目": 3,
+    "伏見区京町　6丁目": 3,
+    "伏見区京町　9丁目": 3,
+    "伏見区京町　10丁目": 3,
+    "伏見区京町北7丁目": 3,
+    "伏見区京町北8丁目": 3,
+    "伏見区京町南7丁目": 3,
+    "伏見区京町南8丁目": 3,
+    "伏見区京町8丁目横町": 3,
+    "伏見区京町大黒町": 3,
+    "伏見区霧ヶ谷町": 1,
+    "伏見区銀座町　1丁目": 3,
+    "伏見区銀座町　2丁目": 3,
+    "伏見区銀座町　3丁目": 3,
+    "伏見区銀座町　4丁目": 3,
+    // ===== く =====
+    "伏見区草津町": 4,
+    "伏見区久保町": 1,
+    "伏見区久米町": 4,
+    "伏見区鞍ヶ谷": 1,
+    "伏見区車阪町": 1,
+    "伏見区車町": 3,
+    "伏見区黒茶屋町": 3,
+    "伏見区畔ノ内": 4,
+    "伏見区黒坊": 3,
+    "伏見区鍬ノ本": 4,
+    // ===== け =====
+    "伏見区ケナサ町": 1,
+    // ===== こ =====
+    "伏見区庚申町": 3,
+    "伏見区紅雪町": 6,
+    "伏見区小久保町": 1,
+    "伏見区極楽寺町": 1,
+    "伏見区極楽寺山町": 1,
+    "伏見区極楽町": 1,
+    "伏見区御香宮門前町": 3,
+    "伏見区古城山": 6,
+    "伏見区御所ノ内町": 2,
+    "伏見区五反田町": 1,
+    "伏見区小柳町": 4,
+    "伏見区五郎太町": 6,
+    "伏見区紺屋町": 3,
+    "伏見区紺屋町（深草）": 3,
+    // ===== さ =====
+    "伏見区西海道": 4,
+    "伏見区笹山町": 1,
+    "伏見区指物町": 3,
+    "伏見区里ノ内": 4,
+    "伏見区讃岐町": 3,
+    "伏見区佐野屋敷町": 1,
+    // ===== し =====
+    "伏見区塩屋町": 3,
+    "伏見区柴田屋敷町": 1,
+    "伏見区芝生": 4,
+    "伏見区治部少丸": 6,
+    "伏見区治部町": 4,
+    "伏見区島津町": 6,
+    "伏見区島津町（町）": 4,
+    "伏見区清水町": 3,
+    "伏見区志水町": 5,
+    "伏見区下油掛町": 3,
+    "伏見区下板橋町": 3,
+    "伏見区下川原町": 1,
+    "伏見区下神泉苑町": 3,
+    "伏見区下島": 4,
+    "伏見区下ノ坪": 4,
+    "伏見区下高松町": 1,
+    "伏見区下中町": 3,
+    "伏見区下野": 6,
+    "伏見区下野（納所）": 4,
+    "伏見区下之町": 3,
+    "伏見区下ノ口町": 3,
+    "伏見区下横縄町": 1,
+    "伏見区下五反田": 3,
+    "伏見区朱雀": 4,
+    "伏見区聚楽町　1丁目": 4,
+    "伏見区聚楽町　2丁目": 4,
+    "伏見区城通町": 4,
+    "伏見区浄菩提院町": 1,
+    "伏見区白砂町": 1,
+    "伏見区白銀町": 3,
+    "伏見区城ノ越町": 2,
+    "伏見区城ノ前町": 4,
+    "伏見区浄春ヶ前町": 4,
+    "伏見区新大河原": 3,
+    "伏見区新上林": 3,
+    "伏見区新宮寺": 4,
+    "伏見区真斉": 2,
+    "伏見区真斉院山町": 3,
+    "伏見区新中町": 1,
+    "伏見区新町": 6,
+    "伏見区新町　1丁目": 3,
+    "伏見区新町　2丁目": 3,
+    "伏見区新町　3丁目": 3,
+    "伏見区新町　4丁目": 3,
+    "伏見区新町　5丁目": 3,
+    "伏見区新町　6丁目": 3,
+    "伏見区新町　7丁目": 3,
+    "伏見区新町　8丁目": 3,
+    "伏見区新町　9丁目": 3,
+    "伏見区新町　10丁目": 3,
+    "伏見区新町　11丁目": 3,
+    "伏見区新町　12丁目": 3,
+    "伏見区新町　13丁目": 3,
+    "伏見区新町　14丁目": 3,
+    "伏見区神明講谷町": 1,
+    "伏見区新門丈町": 1,
+    "伏見区新田": 3,
+    // ===== す =====
+    "伏見区吹田河原町": 3,
+    "伏見区周防町": 3,
+    "伏見区杉本町": 4,
+    "伏見区直違橋　1丁目": 1,
+    "伏見区直違橋　2丁目": 1,
+    "伏見区直違橋　3丁目": 1,
+    "伏見区直違橋　4丁目": 1,
+    "伏見区直違橋　5丁目": 1,
+    "伏見区直違橋　6丁目": 1,
+    "伏見区直違橋　7丁目": 1,
+    "伏見区直違橋　8丁目": 1,
+    "伏見区直違橋　9丁目": 1,
+    "伏見区直違橋　10丁目": 1,
+    "伏見区直違橋　11丁目": 1,
+    "伏見区直違橋片町": 1,
+    "伏見区直違橋北1丁目": 1,
+    "伏見区直違橋南1丁目": 1,
+    "伏見区鈴塚町": 1,
+    "伏見区ススハキ町": 1,
+    "伏見区砂子谷町": 1,
+    "伏見区墨染町": 6,
+    "伏見区墨染": 1,
+    "伏見区須釜町": 3,
+    "伏見区駿河": 6,
+    "伏見区住吉町": 3,
+    // ===== せ =====
+    "伏見区石峰寺山町": 1,
+    "伏見区関屋敷町": 1,
+    "伏見区瀬戸物町": 3,
+    "伏見区芹川町": 2,
+    "伏見区善阿弥町": 3,
+    "伏見区仙石屋敷町": 1,
+    "伏見区善導寺町": 3,
+    "伏見区千両松町": 4,
+    // ===== そ =====
+    "伏見区僧坊町": 1,
+    "伏見区僧坊山町": 1,
+    "伏見区外島": 4,
+    "伏見区外山町": 2,
+    // ===== た =====
+    "伏見区大黒": 3,
+    "伏見区大黒町": 4,
+    "醍醐田町": 1,
+    "伏見区泰長老": 6,
+    "伏見区大門町": 1,
+    "伏見区鷹匠町": 3,
+    "伏見区鷹場町": 3,
+    "伏見区竹中町": 3,
+    "伏見区立売": 6,
+    "伏見区田中宮町": 2,
+    "伏見区田中殿町": 2,
+    "伏見区龍ヶ池": 4,
+    "伏見区立河原町": 3,
+    "伏見区田中殿町（竹田）": 2,
+    "伏見区谷口町": 1,
+    "伏見区田谷町": 1,
+    "伏見区丹後": 6,
+    "伏見区弾正島": 3,
+    "伏見区弾正町": 3,
+    "伏見区丹波橋": 3,
+    "伏見区丹下": 6,
+    "伏見区段川原町": 2,
+    "伏見区樽屋町": 2,
+    "竹田青池町": 2,
+    "竹田内畑町": 1,
+    "竹田桶ノ井町": 1,
+    "竹田狩賀町": 2,
+    "竹田北三ツ杭町": 1,
+    "竹田久保町": 1,
+    "竹田小屋ノ内町": 1,
+    "竹田浄菩提院町": 1,
+    "竹田田中殿町": 2,
+    "竹田田中宮町": 2,
+    "竹田醍醐田町": 1,
+    "竹田段川原町": 2,
+    "竹田鳥羽殿町": 2,
+    "竹田中内畑町": 1,
+    "竹田中川原町": 2,
+    "竹田中島町": 6,
+    "竹田七瀬川町": 1,
+    "竹田西内畑町": 1,
+    "竹田西桶ノ井町": 1,
+    "竹田西小屋ノ内町": 2,
+    "竹田西段川原町": 1,
+    "竹田鋸川町": 1,
+    "竹田東小屋ノ内町": 1,
+    "竹田泓ノ川町": 1,
+    "竹田松林町": 1,
+    "竹田真幡木町": 1,
+    "竹田三ツ杭町": 1,
+    "竹田向代町": 1,
+    "竹田向代町川町": 1,
+    "竹田流池町": 1,
+    "竹田藁屋町": 1,
+    // ===== ち =====
+    "伏見区筑前台町": 6,
+    "伏見区町通町": 1,
+    // ===== つ =====
+    "伏見区塚本町": 1,
+    "伏見区辻堂町": 4,
+    "伏見区津田町": 3,
+    "伏見区津知橋町": 3,
+    "伏見区筒井伊賀西町": 3,
+    "伏見区筒井伊賀東町": 3,
+    "伏見区敦賀町": 6,
+    // ===== て =====
+    "伏見区寺内町": 1,
+    "伏見区出羽屋敷町": 1,
+    "伏見区天王後": 4,
+    "伏見区天王前": 4,
+    // ===== と =====
+    "伏見区問屋町": 4,
+    "伏見区道阿弥町": 3,
+    "伏見区等安町": 3,
+    "伏見区東軸町": 1,
+    "伏見区東泉寺町": 3,
+    "伏見区桃陵町": 3,
+    "伏見区遠山": 6,
+    "伏見区常盤町": 6,
+    "伏見区砥粉山町": 1,
+    "伏見区土橋町": 3,
+    "伏見区鳥羽町": 2,
+    "伏見区鳥羽殿町": 2,
+    "伏見区鳥羽離宮町": 2,
+    "伏見区富ノ森町": 4,
+    "伏見区鳥居崎町": 1,
+    "伏見区泥町跡町": 4,
+    // ===== な =====
+    "伏見区内膳町": 6,
+    "伏見区中油掛町": 3,
+    "伏見区永井久太郎": 6,
+    "伏見区中内畑町": 2,
+    "伏見区中円面田町": 4,
+    "伏見区長岡越中北町": 6,
+    "伏見区長岡越中東町": 6,
+    "伏見区長岡越中南町": 6,
+    "伏見区中河原": 4,
+    "伏見区中川原町": 1,
+    "伏見区中川原町（竹田）": 2,
+    "中島町": 6,
+    "中島町（竹田）": 1,
+    "中島町（向島）": 3,
+    "伏見区中三町": 4,
+    "伏見区中ノ郷山町": 1,
+    "伏見区中ノ島町": 6,
+    "伏見区中ノ庄町": 4,
+    "伏見区中之町": 3,
+    "伏見区中之町（向島）": 3,
+    "伏見区長畑町": 4,
+    "伏見区中道町": 2,
+    "伏見区七瀬川町": 1,
+    "伏見区七瀬川町（竹田）": 1,
+    "伏見区鍋島町": 6,
+    "伏見区鍋島": 6,
+    "伏見区納屋町": 3,
+    "伏見区奈良屋町": 3,
+    "伏見区成町": 4,
+    "伏見区南郷": 4,
+    "伏見区南部町": 3,
+    // ===== に =====
+    "伏見区西尼崎町": 4,
+    "伏見区西飯食町": 1,
+    "伏見区西内畑町": 2,
+    "伏見区西大手町": 3,
+    "伏見区西出町": 1,
+    "伏見区西出町（久我）": 5,
+    "伏見区西鍵屋町": 1,
+    "伏見区西堺町": 3,
+    "伏見区西朱雀町": 3,
+    "伏見区西大黒町": 2,
+    "伏見区西大文字町": 4,
+    "伏見区西大路町": 3,
+    "伏見区西川原町": 1,
+    "伏見区西伊達町": 1,
+    "伏見区西段川原町": 2,
+    "伏見区西出山町": 1,
+    "伏見区西寺町": 1,
+    "伏見区西定請": 3,
+    "伏見区西堤町": 3,
+    "伏見区西浜町": 3,
+    "伏見区西奉行町": 3,
+    "伏見区西桝屋町": 1,
+    "伏見区西町": 6,
+    "伏見区西町（桃山）": 3,
+    "伏見区西柳町": 4,
+    "伏見区西柳長町": 4,
+    "伏見区西芹川町": 2,
+    "伏見区西久宝寺町": 1,
+    "伏見区西小屋ノ内町": 2,
+    "伏見区西桶ノ井町": 1,
+    "伏見区西尾": 6,
+    "伏見区ニノ丸町": 3,
+    "伏見区二ノ丸町": 6,
+    "伏見区二の丸": 6,
+    "伏見区二本柳": 3,
+    "伏見区二本柳（向島）": 3,
+    // ===== ぬ =====
+    "伏見区沼": 4,
+    // ===== ね =====
+    "伏見区根来": 6,
+    "伏見区寝小屋町": 4,
+    // ===== の =====
+    "納所町": 4,
+    "伏見区野田町": 1,
+    "伏見区野手町": 1,
+    // ===== は =====
+    "伏見区橋詰町": 3,
+    "伏見区羽柴長吉中町": 3,
+    "伏見区羽柴長吉西町": 3,
+    "伏見区羽柴長吉東町": 3,
+    "伏見区橋本": 4,
+    "伏見区橋本町": 4,
+    "伏見区畑中町": 4,
+    "伏見区八反田": 4,
+    "伏見区祓川町": 1,
+    "羽束師鴨川町": 5,
+    "羽束師志水町": 5,
+    "羽束師菱川町": 5,
+    "羽束師古川町": 5,
+    // ===== ひ =====
+    "伏見区東裏町": 4,
+    "伏見区東瓦町": 1,
+    "伏見区東大手町": 3,
+    "伏見区東組町": 3,
+    "伏見区東小屋ノ内町": 2,
+    "伏見区東堺町": 3,
+    "伏見区東朱雀町": 3,
+    "伏見区東大黒町": 3,
+    "伏見区東大文字町": 3,
+    "伏見区東浜南町": 4,
+    "伏見区東菱屋町": 3,
+    "伏見区東奉行町": 3,
+    "伏見区東町": 6,
+    "伏見区東柳町": 3,
+    "伏見区東柳長町": 4,
+    "伏見区東伊達町": 1,
+    "伏見区東芹川町": 2,
+    "伏見区東定請": 3,
+    "伏見区東久宝寺町": 1,
+    "伏見区東寺町": 1,
+    "伏見区東古御香町": 6,
+    "伏見区東安信町": 6,
+    "伏見区東ノ口": 4,
+    "伏見区肥後町": 3,
+    "伏見区菱屋町": 3,
+    "伏見区菱川町": 5,
+    "伏見区東瓦町（深草）": 1,
+    "伏見区東久宝寺町（深草）": 1,
+    "伏見区東寺町（深草）": 1,
+    "伏見区東古御香町（深草）": 6,
+    "伏見区東安信町（深草）": 6,
+    "日野岡西町": 7,
+    "日野奥出": 7,
+    "日野北川頬": 7,
+    "日野北山": 7,
+    "日野慈悲町": 7,
+    "日野田頬町": 7,
+    "日野田中町": 7,
+    "日野谷田町": 7,
+    "日野谷寺町": 7,
+    "日野西川頬": 7,
+    "日野西大道町": 7,
+    "日野西風呂町": 7,
+    "日野野色町": 7,
+    "日野畑出町": 7,
+    "日野林": 7,
+    "日野馬場出町": 7,
+    "日野不動講町": 7,
+    "日野船尾": 7,
+    "日野南山": 7,
+    "伏見区百軒長屋": 6,
+    "伏見区日向": 6,
+    "伏見区平田町": 3,
+    "伏見区平塚町": 4,
+    "伏見区平戸町": 3,
+    "伏見区平野町": 3,
+    "伏見区広長町": 4,
+    // ===== ふ =====
+    "深草相深町": 1,
+    "深草鐙ヶ谷町": 1,
+    "深草池ノ内町": 1,
+    "深草石橋町": 1,
+    "深草飯食町": 1,
+    "深草飯食山町": 1,
+    "深草一ノ坪町": 1,
+    "深草稲荷榎木橋町": 1,
+    "深草稲荷御前町": 1,
+    "深草稲荷鳥居前町": 1,
+    "深草稲荷中之町": 1,
+    "深草稲荷山官有地": 1,
+    "深草今在家町": 1,
+    "深草馬谷町": 1,
+    "深草越後屋敷町": 1,
+    "深草大亀谷安信町": 6,
+    "深草大亀谷岩山町": 6,
+    "深草大亀谷大谷町": 1,
+    "深草大亀谷大山町": 1,
+    "深草大亀谷金森出雲町": 6,
+    "深草大亀谷古城山": 6,
+    "深草大亀谷五郎太町": 6,
+    "深草大亀谷敦賀町": 6,
+    "深草大亀谷内膳町": 6,
+    "深草大亀谷西久宝寺町": 1,
+    "深草大亀谷西寺町": 1,
+    "深草大亀谷東安信町": 6,
+    "深草大亀谷東久宝寺町": 1,
+    "深草大亀谷東寺町": 1,
+    "深草大亀谷東古御香町": 6,
+    "深草大亀谷古御香町": 6,
+    "深草大亀谷万帖敷町": 6,
+    "深草大亀谷八島町": 6,
+    "深草大亀谷六鉢町": 6,
+    "深草扇ヶ原町": 1,
+    "深草大島屋敷町": 1,
+    "深草ヲカヤ町": 1,
+    "深草開土口町": 1,
+    "深草開土町": 1,
+    "深草加賀屋敷町": 1,
+    "深草兜山町": 1,
+    "深草上横縄町": 1,
+    "深草枯木町": 1,
+    "深草川久保町": 3,
+    "深草瓦町": 1,
+    "深草勧進橋町": 1,
+    "深草願成町": 1,
+    "深草北鍵屋町": 1,
+    "深草北新町": 1,
+    "深草北蓮池町": 1,
+    "深草キトロ町": 1,
+    "深草霧ヶ谷町": 1,
+    "深草鞍ヶ谷": 1,
+    "深草鞍ケ谷町": 1,
+    "深草車阪町": 1,
+    "深草ケナサ町": 1,
+    "深草小久保町": 1,
+    "深草紺屋町": 3,
+    "深草極楽寺町": 1,
+    "深草極楽寺山町": 1,
+    "深草極楽町": 1,
+    "深草五反田町": 1,
+    "深草笹山町": 1,
+    "深草佐野屋敷町": 1,
+    "深草柴田屋敷町": 1,
+    "深草下川原町": 1,
+    "深草下高松町": 1,
+    "深草下横縄町": 1,
+    "深草正覚町": 1,
+    "深草白砂": 1,
+    "深草真宗院山町": 1,
+    "深草神明講谷町": 1,
+    "深草新門丈町": 1,
+    "深草十九軒町": 1,
+    "深草直違橋": 1,
+    "深草直違橋片町": 1,
+    "深草直違橋北": 1,
+    "深草直違橋南": 1,
+    "深草ススハキ町": 1,
+    "深草鈴塚町": 1,
+    "深草砂子谷町": 1,
+    "深草墨染町": 6,
+    "深草石峰寺山町": 1,
+    "深草関屋敷町": 1,
+    "深草仙石屋敷町": 1,
+    "深草善導寺町": 3,
+    "深草僧坊町": 1,
+    "深草僧坊山町": 1,
+    "深草谷口町": 1,
+    "深草田谷町": 1,
+    "深草大門町": 1,
+    "深草町通町": 1,
+    "深草塚本町": 1,
+    "深草寺内町": 1,
+    "深草出羽屋敷町": 1,
+    "深草東軸町": 1,
+    "深草砥粉山町": 1,
+    "深草鳥居崎町": 1,
+    "深草中川原町": 1,
+    "深草中ノ郷山町": 1,
+    "深草中ノ島町": 6,
+    "深草七瀬川町": 1,
+    "深草南明町": 1,
+    "深草西飯食町": 1,
+    "深草西浦町": 1,
+    "深草西川原町": 1,
+    "深草西伊達町": 1,
+    "深草西出町": 1,
+    "深草西出山町": 1,
+    "深草野田町": 1,
+    "深草野手町": 1,
+    "深草祓川町": 1,
+    "深草東瓦町": 1,
+    "深草東伊達町": 1,
+    "深草平田町": 3,
+    "深草フケノ内町": 1,
+    "深草泓ノ壺町町": 1,
+    "深草藤田坪町": 1,
+    "深草藤森玄蕃町": 1,
+    "深草藤森町": 1,
+    "深草フチ町": 1,
+    "深草宝塔寺山町": 1,
+    "深草堀田町": 1,
+    "深草本寺山町": 1,
+    "深草坊町": 1,
+    "深草坊山町": 1,
+    "深草南蓮池町": 1,
+    "深草宮谷町": 1,
+    "深草向ヶ原町": 1,
+    "深草向川原町": 1,
+    "深草向畑町": 1,
+    "深草森吉町": 1,
+    "深草薮之内町": 1,
+    "深草山村町": 1,
+    "深草芳永町": 1,
+    "深草芳本町": 1,
+    "深草六反田町": 1,
+    "深草綿森町": 1,
+    "伏見区福島太夫北町": 6,
+    "伏見区福島太夫西町": 6,
+    "伏見区福島太夫南町": 6,
+    "伏見区フケノ内町": 1,
+    "伏見区藤田坪町": 1,
+    "伏見区藤ノ木町": 3,
+    "伏見区藤ノ木町（向島）": 3,
+    "伏見区藤森玄蕃町": 1,
+    "伏見区藤森町": 1,
+    "伏見区フチ町": 1,
+    "伏見区古川町": 5,
+    "伏見区古御香町": 6,
+    "伏見区風呂屋町": 3,
+    "伏見区豊後橋町": 6,
+    "伏見区泓ノ川町": 1,
+    // ===== ほ =====
+    "伏見区伯書町": 3,
+    "伏見区坊町": 1,
+    "伏見区宝塔寺山町": 1,
+    "伏見区堀田町": 1,
+    "伏見区堀詰町": 3,
+    "伏見区堀端町": 2,
+    "伏見区本寺山町": 1,
+    "伏見区本多上野": 6,
+    "伏見区本町": 5,
+    "伏見区本丸町": 3,
+    "伏見区本材木町": 3,
+    // ===== ま =====
+    "伏見区前川町": 4,
+    "伏見区前田町": 2,
+    "伏見区前山町": 2,
+    "伏見区正宗": 6,
+    "伏見区桝形町": 3,
+    "伏見区桝屋町": 3,
+    "伏見区松屋町": 3,
+    "伏見区松林": 4,
+    "伏見区松平筑前": 6,
+    "伏見区松平武蔵": 6,
+    "伏見区松林町": 4,
+    "伏見区丸町": 3,
+    "伏見区丸山": 6,
+    "伏見区万帖敷町": 6,
+    "伏見区又兵衛": 3,
+    "伏見区町並": 6,
+    "伏見区舞台町": 2,
+    // ===== み =====
+    "伏見区三河": 6,
+    "伏見区三栖町　1丁目": 4,
+    "伏見区三栖町　2丁目": 4,
+    "伏見区三栖町　3丁目": 4,
+    "伏見区三栖町　4丁目": 4,
+    "伏見区三栖町　5丁目": 4,
+    "伏見区三栖半町": 4,
+    "伏見区三栖向町": 4,
+    "伏見区水野左近西町": 3,
+    "伏見区水野左近東町": 3,
+    "伏見区水垂町": 5,
+    "伏見区美濃": 6,
+    "伏見区見附町": 6,
+    "伏見区美豆町": 5,
+    "伏見区南大島町": 6,
+    "伏見区御堂前町": 3,
+    "伏見区南尼崎町": 3,
+    "伏見区南新地": 3,
+    "伏見区南寝小屋町": 4,
+    "伏見区南浜町": 3,
+    "伏見区南円面田町": 2,
+    "伏見区南三町": 4,
+    "伏見区南町前町": 2,
+    "伏見区南柳長町": 4,
+    "伏見区南六反長町": 4,
+    "伏見区南蓮池町": 1,
+    "伏見区南島": 4,
+    "伏見区南城堀": 4,
+    "伏見区宮谷町": 1,
+    "伏見区宮ノ後": 4,
+    "伏見区宮ノ前町": 4,
+    "伏見区美濃（桃山）": 6,
+    "伏見区宮ノ後（納所）": 4,
+    // ===== む =====
+    "伏見区向ヒ": 4,
+    "伏見区向ヶ原町": 1,
+    "伏見区向川原町": 1,
+    "伏見区向畑町": 1,
+    "向島大河原": 3,
+    "向島上五反田": 3,
+    "向島上林町": 3,
+    "向島庚申町": 3,
+    "向島黒坊": 3,
+    "向島清水町": 3,
+    "向島下五反田": 3,
+    "向島下之町": 3,
+    "向島新大河原": 3,
+    "向島新上林": 3,
+    "向島新田": 3,
+    "向島吹田河原町": 3,
+    "向島善阿弥町": 3,
+    "向島鷹場町": 3,
+    "向島立河原町": 3,
+    "向島大黒": 3,
+    "向島津田町": 3,
+    "向島東泉寺町": 3,
+    "向島中島町": 3,
+    "向島中之町": 3,
+    "向島西定請": 3,
+    "向島西堤町": 3,
+    "向島ニノ丸町": 3,
+    "向島二本柳": 3,
+    "向島橋詰町": 3,
+    "向島東定請": 3,
+    "向島藤ノ木町": 3,
+    "向島本丸町": 3,
+    "向島又兵衛": 3,
+    "向島丸町": 3,
+    "向島柳島": 3,
+    "向島四ツ谷池": 3,
+    "向島渡シ場町": 3,
+    "伏見区村上町": 3,
+    // ===== め =====
+    "伏見区毛利町": 2,
+    "伏見区毛利長門西町": 6,
+    "伏見区毛利長門東町": 6,
+    "伏見区最上町": 6,
+    // ===== も =====
+    "伏見区森の宮町": 5,
+    "伏見区森吉町": 1,
+    // ===== や =====
+    "伏見区薬師堂": 4,
+    "伏見区矢倉町": 3,
+    "伏見区八島町": 1,
+    "伏見区柳島": 3,
+    "伏見区八幡町": 4,
+    "伏見区藪之内町": 1,
+    "伏見区山村町": 1,
+    "伏見区山崎町": 3,
+    "伏見区山城屋敷町": 4,
+    "伏見区山ノ下": 6,
+    "伏見区山殿": 4,
+    "伏見区大和町": 3,
+    // ===== よ =====
+    "横大路一本木町": 4,
+    "横大路一本木": 4,
+    "横大路柿ノ本町": 4,
+    "横大路上ノ浜町": 4,
+    "横大路北ノ口町": 4,
+    "横大路貴船": 4,
+    "横大路貴船町": 4,
+    "横大路草津町": 4,
+    "横大路畔ノ内": 4,
+    "横大路畔ノ内町": 4,
+    "横大路鍬ノ本": 4,
+    "横大路西海道": 4,
+    "横大路芝生": 4,
+    "横大路下島": 4,
+    "横大路下ノ坪": 4,
+    "横大路下三栖梶原町": 4,
+    "横大路下三栖里ノ内": 4,
+    "横大路下三栖城ノ前町": 4,
+    "横大路下三栖辻堂町": 4,
+    "横大路下三栖南郷": 4,
+    "横大路下三栖東ノ口": 4,
+    "横大路下三栖宮ノ後": 4,
+    "横大路下三栖山殿": 4,
+    "横大路神宮寺": 4,
+    "横大路菅本": 4,
+    "横大路朱雀": 4,
+    "横大路千両松町": 4,
+    "横大路竜ヶ池": 4,
+    "横大路竜ヶ池町": 4,
+    "横大路天王後": 4,
+    "横大路天王前": 4,
+    "横大路富ノ森町": 4,
+    "横大路中ノ島町": 4,
+    "横大路中ノ庄町": 4,
+    "横大路長畑町": 4,
+    "横大路沼": 4,
+    "横大路橋本": 4,
+    "横大路橋本町": 4,
+    "横大路畑中町": 4,
+    "横大路八反田": 4,
+    "横大路東裏町": 4,
+    "横大路前川町": 4,
+    "横大路松林": 4,
+    "横大路三栖池田屋敷町": 4,
+    "横大路三栖木下屋敷町": 4,
+    "横大路三栖大黒町": 4,
+    "横大路三栖泥町跡町": 4,
+    "横大路三栖山城屋敷町": 4,
+    "横大路南島": 4,
+    "横大路向ヒ": 4,
+    "横大路六反畑": 4,
+    "伏見区与五郎町": 6,
+    "伏見区芳永町": 1,
+    "伏見区芳本町": 1,
+    // ===== ら =====
+    "伏見区両替町": 1,
+    "伏見区六反田町": 1,
+    "伏見区流池町": 1,
+    // ===== わ =====
+    "伏見区綿森町": 1,
+    "伏見区藁屋町": 1,
+    "伏見区渡瀬町": 4,
+    "伏見区渡場島町": 4,
+    "伏見区渡シ場町": 3,
+    // ===== 淀 =====
+    "淀池上町": 5,
+    "淀大下津町": 5,
+    "淀川顔町": 5,
+    "淀木津町": 5,
+    "淀際目町": 5,
+    "淀下津町": 5,
+    "淀新町": 5,
+    "淀生津町": 5,
+    "淀樋爪町": 5,
+    "淀本町": 5,
+    "淀水垂町": 5,
+    "淀美豆町": 5,
+    // ===== 納所 =====
+    "納所和泉屋": 4,
+    "納所大野": 4,
+    "納所岸ノ下": 4,
+    "納所北城堀": 4,
+    "納所下野": 4,
+    "納所外島": 4,
+    "納所中河原": 4,
+    "納所星柳": 4,
+    "納所南城堀": 4,
+    "納所妙徳寺": 4,
+    "納所薬師堂": 4,
+    // ===== 酸島 =====
+    "酸島金井戸町": 3,
+    "酸島矢倉町": 3,
+    "酸島渡場島町": 4,
+    // ===== 久我 =====
+    "久我東町": 5,
+    "久我石原町": 5,
+    "久我御旅町": 5,
+    "久我西出町": 5,
+    "久我本町": 5,
+    "久我森の宮町": 5,
+    // ===== 下鳥羽 =====
+    "下鳥羽円面田町": 4,
+    "下鳥羽上三栖町": 4,
+    "下鳥羽上向島町": 4,
+    "下鳥羽北円面田町": 4,
+    "下鳥羽北三町": 4,
+    "下鳥羽北ノ口町": 4,
+    "下鳥羽小柳町": 4,
+    "下鳥羽三町": 4,
+    "下鳥羽下向島町": 4,
+    "下鳥羽松若町": 4,
+    "下鳥羽城ノ越町": 2,
+    "下鳥羽浄春ヶ前町": 4,
+    "下鳥羽須釜町": 3,
+    "下鳥羽芹川町": 2,
+    "下鳥羽但馬町": 4,
+    "下鳥羽中円面田町": 4,
+    "下鳥羽中三町": 4,
+    "下鳥羽中向島町": 4,
+    "下鳥羽長田町": 4,
+    "下鳥羽西芹川町": 2,
+    "下鳥羽西柳長町": 4,
+    "下鳥羽東芹川町": 2,
+    "下鳥羽東柳長町": 4,
+    "下鳥羽平塚町": 4,
+    "下鳥羽広長町": 4,
+    "下鳥羽前田町": 2,
+    "下鳥羽南円面田町": 2,
+    "下鳥羽南三町": 4,
+    "下鳥羽南町前町": 2,
+    "下鳥羽南柳長町": 4,
+    "下鳥羽南六反長町": 4,
+    "下鳥羽柳長町": 4,
+    "下鳥羽酸田町": 4,
+    "下鳥羽澱女町": 4,
+    "下鳥羽六反長町": 4,
+    "下鳥羽渡瀬町": 4,
+    // ===== 桃山町 =====
+    "桃山井伊掃部西町": 3,
+    "桃山井伊掃部東町": 3,
+    "桃山紅雪町": 6,
+    "桃山筑前台町": 6,
+    "桃山町安芸山": 6,
+    "桃山町伊賀": 6,
+    "桃山町和泉": 6,
+    "桃山町板倉周防": 6,
+    "桃山町因幡": 6,
+    "桃山町伊庭": 6,
+    "桃山町大蔵": 6,
+    "桃山町大島": 6,
+    "桃山町大津町": 6,
+    "桃山町片岸": 3,
+    "桃山町金井戸島": 3,
+    "桃山町金井戸島町": 4,
+    "桃山町金森出雲": 6,
+    "桃山町紅雪": 6,
+    "桃山町古城山": 6,
+    "桃山町島津": 6,
+    "桃山町下野": 6,
+    "桃山町真斉": 2,
+    "桃山町新町": 3,
+    "桃山町治部少丸": 6,
+    "桃山町駿河": 6,
+    "桃山町泰長老": 6,
+    "桃山町立売": 6,
+    "桃山町丹下": 6,
+    "桃山町丹後": 6,
+    "桃山町弾正島": 3,
+    "桃山町遠山": 6,
+    "桃山町中島町": 6,
+    "桃山町永井久太郎": 6,
+    "桃山町鍋島": 6,
+    "桃山町西尾": 6,
+    "桃山町西町": 3,
+    "桃山町二の丸": 6,
+    "桃山町根来": 6,
+    "桃山町東町": 6,
+    "桃山町百軒長屋": 6,
+    "桃山町日向": 6,
+    "桃山町本多上野": 6,
+    "桃山町正宗": 6,
+    "桃山町町並": 6,
+    "桃山町松平筑前": 6,
+    "桃山町松平武蔵": 6,
+    "桃山町丸山": 6,
+    "桃山町三河": 6,
+    "桃山町見附町": 6,
+    "桃山町美濃": 6,
+    "桃山町山ノ下": 6,
+    "桃山町養斉": 6,
+    "桃山筒井伊賀西町": 3,
+    "桃山筒井伊賀東町": 3,
+    "桃山長岡越中北町": 6,
+    "桃山長岡越中東町": 6,
+    "桃山長岡越中南町": 6,
+    "桃山羽柴長吉中町": 3,
+    "桃山羽柴長吉西町": 3,
+    "桃山羽柴長吉東町": 3,
+    "桃山福島太夫北町": 6,
+    "桃山福島太夫西町": 6,
+    "桃山福島太夫南町": 6,
+    "桃山水野左近西町": 3,
+    "桃山水野左近東町": 3,
+    "桃山南大島町": 6,
+    "桃山毛利長門西町": 6,
+    "桃山毛利長門東町": 6,
+    "桃山最上町": 6,
+    "桃山与五郎町": 6,
+    // ===== 醍醐 =====
+    "醍醐合場町": 6,
+    "醍醐赤間南裏町": 6,
+    "醍醐池田町": 6,
+    "醍醐和泉町": 6,
+    "醍醐一言寺裏町": 6,
+    "醍醐一ノ切町": 6,
+    "醍醐上ノ山町": 6,
+    "醍醐内ヶ井戸": 6,
+    "醍醐江奈志町": 6,
+    "醍醐大構町": 6,
+    "醍醐大高町": 6,
+    "醍醐大畑町": 6,
+    "醍醐落保町": 6,
+    "醍醐折戸町": 6,
+    "醍醐柿原": 6,
+    "醍醐柿原町": 6,
+    "醍醐鍵尾町": 6,
+    "醍醐柏森町": 6,
+    "醍醐片山町": 6,
+    "醍醐構口町": 6,
+    "醍醐上端山町": 6,
+    "醍醐上山口町": 6,
+    "醍醐上山田": 6,
+    "醍醐烏橋町": 6,
+    "醍醐川久保町": 6,
+    "醍醐伽藍町": 6,
+    "醍醐岸ノ上町": 6,
+    "醍醐北伽藍町": 6,
+    "醍醐北谷": 6,
+    "醍醐北西裏町": 6,
+    "醍醐北端山": 6,
+    "醍醐京道町": 6,
+    "醍醐切レ戸町": 6,
+    "醍醐御所ノ内": 6,
+    "醍醐御霊ヶ下町": 6,
+    "醍醐御陵西裏町": 6,
+    "醍醐御陵東裏町": 6,
+    "醍醐三ノ切": 6,
+    "醍醐下端山町": 6,
+    "醍醐下山口町": 6,
+    "醍醐勝口町": 6,
+    "醍醐新開": 6,
+    "醍醐新町裏町": 6,
+    "醍醐僧尊坊町": 6,
+    "醍醐外山街道町": 6,
+    "醍醐高田": 6,
+    "醍醐高畑町": 6,
+    "醍醐多近田町": 6,
+    "醍醐辰巳町": 6,
+    "醍醐醍醐山": 6,
+    "醍醐陀羅谷": 6,
+    "醍醐中山町": 6,
+    "醍醐西大路町": 6,
+    "醍醐ニノ切町": 6,
+    "醍醐狭間": 6,
+    "醍醐東合場町": 6,
+    "醍醐東大路町": 6,
+    "醍醐平松町": 6,
+    "醍醐古道町": 6,
+    "醍醐槇ノ内町": 6,
+    "醍醐廻リ戸町": 6,
+    "醍醐御園尾町": 6,
+    "醍醐南里町": 6,
+    "醍醐南谷": 6,
+    "醍醐南西裏町": 6,
+    "醍醐南端山": 6,
+    "醍醐南端山町": 6,
+    "醍醐宮ノ下町": 6,
+    "醍醐山ヶ鼻": 6,
+    "醍醐連蔵": 6,
+    // ===== 小栗栖 =====
+    "小栗栖石川町": 6,
+    "小栗栖岩ヶ淵町": 6,
+    "小栗栖牛ヶ淵町": 6,
+    "小栗栖北後藤町": 6,
+    "小栗栖北谷町": 6,
+    "小栗栖小阪町": 6,
+    "小栗栖中山田町": 6,
+    "小栗栖西谷町": 6,
+    "小栗栖西ノ峰": 6,
+    "小栗栖鉢伏": 6,
+    "小栗栖丸山": 6,
+    "小栗栖南後藤町": 6,
+    "小栗栖森ヶ淵町": 6,
+    "小栗栖森本町": 6,
+    "小栗栖山口町": 6,
+    // ===== 石田 =====
+    "石田内里町": 7,
+    "石田大受町": 7,
+    "石田大山町": 7,
+    "石田川向": 7,
+    "石田桜木": 7,
+    "石田西ノ坪": 7,
+    "石田森西": 7,
+    "石田森東町": 7,
+    "石田森南町": 7,
+    // ===== 中島 =====
+    "中島秋ノ山町": 2,
+    "中島河原田町": 2,
+    "中島北ノ口町": 2,
+    "中島御所ノ内町": 2,
+    "中島鳥羽離宮町": 2,
+    "中島外山町": 2,
+    "中島中道町": 2,
+    "中島樋ノ上町": 2,
+    "中島堀端町": 2,
+    "中島前山町": 2,
+    "中島宮ノ後町": 2,
+    "中島宮ノ前町": 4,
+    "中島流作町": 2,
+    // ===== 奉行前町その他 =====
+    "伏見区奉行前町": 3,
+    "伏見区上油掛町": 3,
+    "伏見区上板橋町": 3,
+    "伏見区帯屋町": 3,
+    "伏見区撞木町": 3,
+    "伏見区鑓屋町": 1,
+    // ===== 追加 =====
+    "伏見区上五反田": 3,
+    "伏見区四ツ谷池": 3,
+    "伏見区御堂前町（向島）": 3,
+    "伏見区妙徳寺": 4,
+    "伏見区星柳": 4,
+    "伏見区美濃町": 6,
+    "伏見区養斉": 6,
+  };
+
+  const allTowns = Object.keys(townCourseMap);
+  const VALID_COURSES = ["1","2","3","4","5","6","7"];
+  const STORAGE_KEY = 'fushimiCustomData';
+
+  function hasOwn(obj, key) {
+    return Object.prototype.hasOwnProperty.call(obj, key);
+  }
+
+  // ========== 検索用の表記ゆれ吸収 ==========
+  function normalizeForSearch(s) {
+    return String(s)
+      .replace(/\s+/g, '')
+      .replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+      .replace(/[ぁ-ゖ]/g, c => String.fromCharCode(c.charCodeAt(0) + 0x60))
+      .replace(/ニ/g, '二')
+      .replace(/ケ/g, 'ヶ');
+  }
+  const searchIndex = allTowns.map(town => ({ town, key: normalizeForSearch(town) }));
+
+  // ========== 個別設定データ（読み込み時に中身をチェック） ==========
+  function sanitizeCustomData(obj) {
+    if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return null;
+    const clean = {};
+    for (const key of Object.keys(obj)) {
+      const course = String(obj[key]);
+      if (hasOwn(townCourseMap, key) && VALID_COURSES.includes(course)) {
+        clean[key] = course;
+      }
+    }
+    return clean;
+  }
+
+  function loadCustomData() {
+    try {
+      return sanitizeCustomData(JSON.parse(localStorage.getItem(STORAGE_KEY))) || {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveCustomData() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(savedCustomCourses));
+    } catch (e) {
+      alert('保存に失敗しました（プライベートブラウズ中などでは保存できません）。');
+    }
+  }
+
+  let savedCustomCourses = loadCustomData();
+  let currentEditingTown = "";
+  let checkedTowns = new Set();
+  let currentMapTarget = "";
+
+  const searchInput = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('clearBtn');
+  const courseFilterEl = document.getElementById('courseFilter');
+  const resultArea = document.getElementById('resultArea');
+  const mapJumpBar = document.getElementById('mapJumpBar');
+  const checkedCountEl = document.getElementById('checkedCount');
+  const emptyMsg = '<div class="empty-message">検索したい町名を入力してください。</div>';
+
+  function getDefaultCourse(town) {
+    if (hasOwn(townCourseMap, town)) {
+      return String(townCourseMap[town]);
+    }
+    return "確認";
+  }
+
+  function getCourse(town) {
+    return hasOwn(savedCustomCourses, town) ? savedCustomCourses[town] : getDefaultCourse(town);
+  }
+
+  // ========== マップURL生成 ==========
+  function buildMapAddress(town) {
+    let addr = town.replace(/（[^）]*）/g, '').replace(/\s+/g, '');
+    if (!addr.includes('伏見区')) {
+      addr = '伏見区' + addr;
+    }
+    return '京都市' + addr;
+  }
+
+  function getMapUrl(mapType, address) {
+    const q = encodeURIComponent(address);
+    switch (mapType) {
+      case 'apple':  return 'https://maps.apple.com/?q=' + q;
+      case 'google': return 'https://www.google.com/maps/search/?api=1&query=' + q;
+      case 'yahoo':  return 'yjmap://search?query=' + q;
+    }
+    return '';
+  }
+
+  function getGoogleRouteUrl(addresses) {
+    const destination = addresses[addresses.length - 1];
+    const waypoints = addresses.slice(0, -1);
+    let url = 'https://www.google.com/maps/dir/?api=1&travelmode=driving'
+      + '&destination=' + encodeURIComponent(destination);
+    if (waypoints.length > 0) {
+      url += '&waypoints=' + encodeURIComponent(waypoints.join('|'));
+    }
+    return url;
+  }
+
+  function openUrl(url) {
+    if (url.startsWith('http')) {
+      const win = window.open(url, '_blank');
+      if (!win) location.href = url;
+    } else {
+      location.href = url;
+    }
+  }
+
+  function openMapByType(mapType, address) {
+    sfxWarp();
+    openUrl(getMapUrl(mapType, address));
+  }
+
+  // ===== 単体マップボタンクリック =====
+  window.openMapSelect = function(town) {
+    sfxOpen();
+    currentMapTarget = town;
+    const baseAddr = buildMapAddress(town);
+    document.getElementById('mapTargetName').textContent = '📍 ' + baseAddr;
+    const banchiInput = document.getElementById('banchiInput');
+    banchiInput.value = '';
+    updateFullAddressPreview();
+    document.getElementById('mapSelectModal').style.display = 'flex';
+    setTimeout(() => banchiInput.focus(), 200);
+  };
+
+  function getFullAddress() {
+    const baseAddr = buildMapAddress(currentMapTarget);
+    const banchi = document.getElementById('banchiInput').value.trim();
+    return banchi ? baseAddr + banchi : baseAddr;
+  }
+
+  function updateFullAddressPreview() {
+    document.getElementById('mapFullAddress').textContent = '🔍 ' + getFullAddress();
+  }
+
+  document.getElementById('banchiInput').addEventListener('input', function() {
+    sfxType();
+    updateFullAddressPreview();
+  });
+
+  window.openMapApp = function(mapType) {
+    const fullAddr = getFullAddress();
+    document.getElementById('mapSelectModal').style.display = 'none';
+    openMapByType(mapType, fullAddr);
+  };
+
+  window.closeMapSelectModal = function() {
+    sfxCancel();
+    document.getElementById('mapSelectModal').style.display = 'none';
+  };
+
+  // ===== 複数チェック → まとめてマップジャンプ =====
+  function updateMapJumpBar() {
+    const count = checkedTowns.size;
+    checkedCountEl.textContent = count;
+    mapJumpBar.style.display = count > 0 ? 'block' : 'none';
+  }
+
+  function toggleCheck(town, checkbox) {
+    sfxTap();
+    const item = checkbox.closest('.result-item');
+    if (checkbox.checked) {
+      checkedTowns.add(town);
+      item.classList.add('checked');
+    } else {
+      checkedTowns.delete(town);
+      item.classList.remove('checked');
+    }
+    updateMapJumpBar();
+  }
+
+  const GOOGLE_ROUTE_MAX = 10;
+
+  window.jumpCheckedToMap = function(mapType) {
+    if (checkedTowns.size === 0) return;
+    const addresses = Array.from(checkedTowns).map(buildMapAddress);
+
+    if (addresses.length === 1) {
+      openMapByType(mapType, addresses[0]);
+      return;
+    }
+
+    if (mapType === 'google' && addresses.length <= GOOGLE_ROUTE_MAX) {
+      sfxWarp();
+      openUrl(getGoogleRouteUrl(addresses));
+      return;
+    }
+
+    openMultiMapModal(mapType, addresses);
+  };
+
+  const multiMapModal = document.getElementById('multiMapModal');
+  const mapTypeLabels = { apple: 'Appleマップ', google: 'Googleマップ', yahoo: 'Yahoo!マップ' };
+
+  function openMultiMapModal(mapType, addresses) {
+    sfxOpen();
+    document.getElementById('multiMapTitle').textContent =
+      '🗺️ ' + mapTypeLabels[mapType] + 'で順番に開く（' + addresses.length + '件）';
+    const list = document.getElementById('multiMapList');
+    list.innerHTML = '';
+    addresses.forEach((addr, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'multi-item-btn';
+      const num = document.createElement('span');
+      num.className = 'multi-item-num';
+      num.textContent = i + 1;
+      const label = document.createElement('span');
+      label.textContent = addr;
+      btn.appendChild(num);
+      btn.appendChild(label);
+      btn.addEventListener('click', () => {
+        btn.classList.add('visited');
+        openMapByType(mapType, addr);
+      });
+      list.appendChild(btn);
+    });
+    multiMapModal.style.display = 'flex';
+  }
+
+  window.closeMultiMapModal = function() {
+    sfxCancel();
+    multiMapModal.style.display = 'none';
+  };
+
+  // ========== 検索結果レンダリング ==========
+  function createResultItem(town, showCheckbox) {
+    const isCustom = hasOwn(savedCustomCourses, town);
+    const courseNumber = getCourse(town);
+
+    const div = document.createElement('div');
+    div.className = 'result-item';
+
+    if (showCheckbox) {
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.className = 'result-checkbox';
+      cb.addEventListener('change', () => toggleCheck(town, cb));
+      div.appendChild(cb);
+    }
+
+    const info = document.createElement('div');
+    info.className = 'town-info';
+    const name = document.createElement('div');
+    name.className = 'town-name';
+    name.textContent = town;
+    info.appendChild(name);
+    if (isCustom) {
+      const mark = document.createElement('div');
+      mark.className = 'edited-mark';
+      mark.textContent = '✓ 個別設定済';
+      info.appendChild(mark);
+    }
+    div.appendChild(info);
+
+    const actions = document.createElement('div');
+    actions.className = 'action-area';
+
+    const badge = document.createElement('span');
+    badge.className = 'course-badge';
+    badge.style.backgroundColor = courseColors[courseNumber] || courseColors["確認"];
+    badge.textContent = courseNumber;
+    actions.appendChild(badge);
+
+    const mapBtn = document.createElement('button');
+    mapBtn.className = 'map-single-btn';
+    mapBtn.textContent = '🗺️';
+    mapBtn.addEventListener('click', () => openMapSelect(town));
+    actions.appendChild(mapBtn);
+
+    const editBtn = document.createElement('button');
+    editBtn.className = 'edit-btn';
+    editBtn.textContent = '✏️';
+    editBtn.addEventListener('click', () => openEditModal(town, courseNumber));
+    actions.appendChild(editBtn);
+
+    div.appendChild(actions);
+    return div;
+  }
+
+  let lastResultCount = -1;
+  function renderResults() {
+    const rawKeyword = searchInput.value.trim();
+    const keyword = normalizeForSearch(rawKeyword);
+    clearBtn.style.display = rawKeyword.length > 0 ? 'flex' : 'none';
+
+    resultArea.innerHTML = '';
+    checkedTowns.clear();
+    updateMapJumpBar();
+
+    const courseFilter = courseFilterEl.value;
+    if (!keyword && !courseFilter) {
+      resultArea.innerHTML = emptyMsg;
+      lastResultCount = -1;
+      return;
+    }
+
+    const results = searchIndex
+      .filter(({ town, key }) => {
+        const matchKeyword = keyword ? key.includes(keyword) : true;
+        const matchCourse = courseFilter ? getCourse(town) === courseFilter : true;
+        return matchKeyword && matchCourse;
+      })
+      .map(entry => entry.town);
+
+    if (results.length === 0) {
+      resultArea.innerHTML = '<div class="empty-message">一致する町名が見つかりません。</div>';
+      if (lastResultCount !== 0) sfxNotFound();
+      lastResultCount = 0;
+      return;
+    }
+
+    if (lastResultCount <= 0) {
+      sfxFound();
+    } else if (results.length !== lastResultCount) {
+      sfxType();
+    }
+    lastResultCount = results.length;
+
+    const showCheckbox = results.length > 1;
+    const fragment = document.createDocumentFragment();
+    results.forEach(town => fragment.appendChild(createResultItem(town, showCheckbox)));
+    resultArea.appendChild(fragment);
+  }
+
+  searchInput.addEventListener('input', renderResults);
+  courseFilterEl.addEventListener('change', renderResults);
+
+  clearBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    sfxClear();
+    searchInput.value = '';
+    renderResults();
+    searchInput.focus();
+  });
+
+  // ========== コース修正モーダル ==========
+  const editModal = document.getElementById('editModal');
+  const modalTownName = document.getElementById('modalTownName');
+  const modalCourseSelect = document.getElementById('modalCourseSelect');
+
+  function openEditModal(town, currentCourse) {
+    sfxOpen();
+    currentEditingTown = town;
+    modalTownName.textContent = town;
+    modalCourseSelect.value = VALID_COURSES.includes(currentCourse) ? currentCourse : "";
+    editModal.style.display = 'flex';
+  }
+
+  window.closeEditModal = function() {
+    sfxCancel();
+    editModal.style.display = 'none';
+    currentEditingTown = "";
+  };
+
+  window.saveEditModal = function() {
+    const selectedCourse = modalCourseSelect.value;
+
+    if (selectedCourse === "") {
+      delete savedCustomCourses[currentEditingTown];
+    } else {
+      savedCustomCourses[currentEditingTown] = selectedCourse;
+    }
+
+    saveCustomData();
+    sfxSave();
+    editModal.style.display = 'none';
+    currentEditingTown = "";
+    renderResults();
+  };
+
+  // ========== 設定モーダル ==========
+  const settingsModal = document.getElementById('settingsModal');
+  const fileInput = document.getElementById('fileInput');
+
+  window.openSettings = function() {
+    sfxTap();
+    settingsModal.style.display = 'flex';
+  };
+
+  window.closeSettings = function() {
+    sfxCancel();
+    settingsModal.style.display = 'none';
+  };
+
+  window.exportDataToFile = function() {
+    if (Object.keys(savedCustomCourses).length === 0) {
+      sfxNotFound();
+      alert("まだ個別設定されたデータがありません。");
+      return;
+    }
+    const dataString = JSON.stringify(savedCustomCourses);
+
+    const now = new Date();
+    const dateStr = now.getFullYear() + String(now.getMonth() + 1).padStart(2, '0') + String(now.getDate()).padStart(2, '0');
+    const fileName = `伏見集荷コース_バックアップ_${dateStr}.json`;
+
+    const blob = new Blob([dataString], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    sfxFanfare();
+  };
+
+  window.triggerImport = function() {
+    sfxTap();
+    fileInput.click();
+  };
+
+  fileInput.addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(event) {
+      try {
+        const parsedData = JSON.parse(event.target.result);
+        const clean = sanitizeCustomData(parsedData);
+        if (!clean) throw new Error('invalid format');
+
+        const skipped = Object.keys(parsedData).length - Object.keys(clean).length;
+        savedCustomCourses = clean;
+        saveCustomData();
+
+        sfxFanfare();
+        let msg = "ファイルの読み込みが完了し、データを復元しました！（" + Object.keys(clean).length + "件）";
+        if (skipped > 0) {
+          msg += "\n\n※ 町名が見つからない・コース番号が不正な " + skipped + " 件は読み込みませんでした。";
+        }
+        alert(msg);
+        closeSettings();
+        renderResults();
+      } catch (err) {
+        sfxNotFound();
+        alert("ファイルの読み込みに失敗しました。正しいバックアップファイルを選択してください。");
+      }
+      fileInput.value = '';
+    };
+    reader.readAsText(file);
+  });
+
+  // =============================================================
+  // Claude Code のキャラクター（ヘッダー左上）
+  //   右へ歩く → 端で立ち止まって手足をちょこちょこ動かし、振り向く → 左へ戻る … を繰り返す
+  // =============================================================
+  (function ccMascot() {
+    const svg = document.querySelector('.cc-mascot svg');
+    if (!svg) return;
+    const body = svg.querySelector('.cc-hop');
+    const armL = svg.querySelector('.cc-arm-l');
+    const armR = svg.querySelector('.cc-arm-r');
+    const legs = Array.from(svg.querySelectorAll('.cc-leg')); // 左から順に4本
+
+    const HALF = 12;        // 真ん中から左右それぞれに歩く幅（px）
+    const STEP = 2;         // 1歩で進む距離（px）
+    const TICK = 220;       // 1コマの長さ（ミリ秒）
+    const IDLE_TICKS = 9;   // 端で立ち止まるコマ数
+
+    let x = -HALF, dir = 1, mode = 'idle', t = 0;
+
+    const legUp = (i, up) => legs[i].setAttribute('height', up ? 1 : 2);
+    const armUp = (el, up) => el.setAttribute('y', up ? 1 : 2);
+    const bob = up => body.setAttribute('transform', up ? 'translate(0,-1)' : '');
+    const rest = () => { legs.forEach((_, i) => legUp(i, false)); armUp(armL, false); armUp(armR, false); bob(false); };
+    const draw = () => { svg.style.transform = `translateX(${x}px) scaleX(${dir})`; };
+
+    function tick() {
+      t++;
+      if (mode === 'walk') {
+        // 歩く：外側2本と内側2本の足を交互に上げ、体も小さく弾ませる
+        const ph = t % 2;
+        armUp(armL, false); armUp(armR, false);
+        legUp(0, ph === 0); legUp(2, ph === 0);
+        legUp(1, ph === 1); legUp(3, ph === 1);
+        bob(ph === 0);
+        x += STEP * dir;
+        if (x <= -HALF || x >= HALF) {
+          x = Math.max(-HALF, Math.min(HALF, x));
+          mode = 'idle'; t = 0; rest();
+        }
+      } else {
+        // 立ち止まり：両腕を交互に上げ下げし、端の足でトントンと足踏み
+        const ph = t % 4;
+        armUp(armL, ph === 1);
+        armUp(armR, ph === 3);
+        legUp(0, ph === 2);
+        legUp(3, ph === 0);
+        bob(false);
+        if (t === Math.floor(IDLE_TICKS / 2)) dir = (x >= HALF) ? -1 : 1; // 途中で振り向く
+        if (t >= IDLE_TICKS) { mode = 'walk'; t = 0; rest(); }
+      }
+      draw();
+    }
+
+    draw();
+    setInterval(tick, TICK);
+  })();
+
+  // =============================================================
+  // ホーム画面アイコン：元のアイコン画像の左上に Claude Code のキャラクターを描き足す
+  // =============================================================
+  (function ccIcon() {
+    const appleIcon = document.getElementById('appleIcon');
+    const favIcon = document.getElementById('favIcon');
+    const img = new Image();
+    img.onload = function() {
+      const size = img.width;   // 元画像は 180px
+      const canvas = document.createElement('canvas');
+      canvas.width = canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      // 左上に Claude Code のキャラクター（画面左上で動いているものと同じドット絵）を小さく描く
+      (function(){
+        var p=3, ox=20, oy=20;   // 1ドットの大きさと左上の位置（180pxアイコンの場合）
+        var px=function(x,y,w,h,col){ctx.fillStyle=col;ctx.fillRect(ox+x*p,oy+y*p,w*p,h*p);};
+        var o='#d97757';
+        px(2,0,8,6,o); px(0,2,2,2,o); px(10,2,2,2,o);               // 体と両腕
+        px(2,6,1,2,o); px(4,6,1,2,o); px(7,6,1,2,o); px(9,6,1,2,o); // 足4本
+        px(3,1,1,1,'#1a1612'); px(8,1,1,1,'#1a1612');               // 目
+      })();
+      const url = canvas.toDataURL('image/png');
+      appleIcon.href = url;
+      favIcon.href = url;
+    };
+    img.src = appleIcon.href;
+  })();
+
+</script>
+
+</body>
+</html>
