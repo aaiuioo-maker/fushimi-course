@@ -564,8 +564,9 @@
   /* 絵は左から右へ、幕が開くようにスーッと出す。出きったら光の筋が1本走る */
   .op-hero.show { opacity: 1; animation: heroWipe 0.6s ease-out forwards; }
   @keyframes heroWipe {
-    0%   { clip-path: inset(0 100% 0 0); }
-    100% { clip-path: inset(0 0 0 0); }
+    /* まわりに20pxの余白を残して切る（金の光のふちが消えないように） */
+    0%   { clip-path: inset(-20px 100% -20px -20px); }
+    100% { clip-path: inset(-20px -20px -20px -20px); }
   }
   .op-hero::after {
     content: "";
@@ -583,6 +584,7 @@
   }
   .op-hero img {
     display: block;
+    box-sizing: border-box;   /* 金の枠線も幅に含める（含めないと右端がはみ出して切れる） */
     width: 100%;
     height: auto;
     border: 2px solid #ffd700;
