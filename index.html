@@ -561,21 +561,25 @@
     margin: 22px auto 8px;
     opacity: 0;
   }
-  .op-hero.show { animation: heroIn 0.55s ease-out forwards; }
-  @keyframes heroIn {
-    0%   { opacity: 0; transform: scale(1.3); filter: brightness(3); }
-    55%  { opacity: 1; transform: scale(0.96); filter: brightness(1.7); }
-    100% { opacity: 1; transform: scale(1); filter: none; }
+  /* 絵は左から右へ、幕が開くようにスーッと出す。出きったら光の筋が1本走る */
+  .op-hero.show { opacity: 1; animation: heroWipe 0.6s ease-out forwards; }
+  @keyframes heroWipe {
+    0%   { clip-path: inset(0 100% 0 0); }
+    100% { clip-path: inset(0 0 0 0); }
   }
-  /* 絵が出た瞬間に画面がゆれる */
-  #opening-screen.shake { animation: opShake 0.45s; }
-  @keyframes opShake {
-    0%, 100% { transform: translate(0, 0); }
-    15% { transform: translate(-7px, 4px); }
-    30% { transform: translate(6px, -5px); }
-    45% { transform: translate(-5px, -3px); }
-    60% { transform: translate(4px, 4px); }
-    80% { transform: translate(-2px, 1px); }
+  .op-hero::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: -40%;
+    width: 30%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,0.65), transparent);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .op-hero.show::after { animation: heroShine 0.7s ease-in-out 0.55s forwards; }
+  @keyframes heroShine {
+    0%   { left: -40%; opacity: 1; }
+    100% { left: 110%; opacity: 1; }
   }
   .op-hero img {
     display: block;
@@ -969,8 +973,6 @@
     const screen = document.getElementById('opening-screen');
     document.getElementById('opPress').classList.add('hide');
     document.getElementById('opBubble').closest('.op-hero').classList.add('show');
-    screen.classList.add('shake');
-    setTimeout(() => screen.classList.remove('shake'), 450);
     sfxImpact();
     setTimeout(() => {
       if (openingClosed) return;
@@ -1023,13 +1025,13 @@
     }
   }
 
-  // 絵が出るとき：「ドドーン」（低い音を重ねて、最後に長くうなる）
+  // 絵が出るとき：「シャララーン」（幕が開くのに合わせて音が駆け上がり、最後にキラキラ）
   function sfxImpact() {
-    playTone(1800, 0.05, 'square', 0.06, 0);
-    playTone(98, 0.18, 'sawtooth', 0.20, 0);
-    playTone(82, 0.18, 'sawtooth', 0.20, 0.13);
-    playTone(65, 0.70, 'sawtooth', 0.22, 0.26);
-    playTone(49, 0.80, 'triangle', 0.25, 0.26);
+    const up = [523, 659, 784, 988, 1175, 1319, 1568];
+    up.forEach((f, i) => playTone(f, 0.12, 'triangle', 0.10, i * 0.07));
+    playTone(2093, 0.6, 'sine', 0.08, 0.55);
+    playTone(2637, 0.5, 'sine', 0.06, 0.65);
+    playTone(3136, 0.4, 'sine', 0.05, 0.78);
   }
   // 吹き出しが出るとき：「ポン」
   function sfxBubble() {
