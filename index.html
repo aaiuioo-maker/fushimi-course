@@ -554,13 +554,28 @@
     animation-delay: 1.0s;
   }
   /* ハルケンブルグの絵（セリフの吹き出し付き） */
+  /* タップするまでは見せない。タップで「ドドーン」と光って出てくる */
   .op-hero {
     position: relative;
     width: min(92vw, 420px);
     margin: 22px auto 8px;
-    animation: opFadeIn 0.8s ease forwards;
     opacity: 0;
-    animation-delay: 1.2s;
+  }
+  .op-hero.show { animation: heroIn 0.55s ease-out forwards; }
+  @keyframes heroIn {
+    0%   { opacity: 0; transform: scale(1.3); filter: brightness(3); }
+    55%  { opacity: 1; transform: scale(0.96); filter: brightness(1.7); }
+    100% { opacity: 1; transform: scale(1); filter: none; }
+  }
+  /* 絵が出た瞬間に画面がゆれる */
+  #opening-screen.shake { animation: opShake 0.45s; }
+  @keyframes opShake {
+    0%, 100% { transform: translate(0, 0); }
+    15% { transform: translate(-7px, 4px); }
+    30% { transform: translate(6px, -5px); }
+    45% { transform: translate(-5px, -3px); }
+    60% { transform: translate(4px, 4px); }
+    80% { transform: translate(-2px, 1px); }
   }
   .op-hero img {
     display: block;
@@ -588,10 +603,18 @@
     text-align: left;
     letter-spacing: 0;
     box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
-    animation: opFadeIn 0.5s ease forwards, bubblePop 0.4s ease 1.9s;
     opacity: 0;
-    animation-delay: 1.7s, 1.9s;
+    transform-origin: 30% 100%;
   }
+  .op-bubble.show { animation: bubbleIn 0.3s ease-out forwards; }
+  @keyframes bubbleIn {
+    0%   { opacity: 0; transform: scale(0.3); }
+    70%  { opacity: 1; transform: scale(1.08); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  /* セリフは1文字ずつ出す（先に全部の文字を置いて、見えなくしておく＝吹き出しの大きさが変わらない） */
+  .op-char { visibility: hidden; }
+  .op-char.on { visibility: visible; }
   /* 吹き出しのしっぽ（男性の頭のほうへ） */
   .op-bubble::after {
     content: "";
@@ -612,20 +635,12 @@
     border-top: 7px solid #fff;
     z-index: 1;
   }
-  @keyframes bubblePop {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
-  }
   .op-tagline {
     font-family: 'Courier New', monospace;
     font-size: 12px;
     color: #7dcea0;
     letter-spacing: 2px;
     margin-top: 12px;
-    animation: opFadeIn 1s ease forwards;
-    opacity: 0;
-    animation-delay: 1.6s;
   }
   .op-divider {
     width: 160px;
@@ -646,6 +661,15 @@
     opacity: 0;
     animation-delay: 2.2s;
     cursor: pointer;
+  }
+  .op-press.hide { display: none; }
+  /* 絵の場所。タップ前は「タップしてはじめる」を絵の場所の真ん中に重ねる */
+  .op-stage { position: relative; }
+  .op-stage .op-press {
+    position: absolute;
+    left: 0; right: 0; top: 50%;
+    margin-top: -8px;
+    z-index: 1;
   }
   @keyframes blink {
     0%, 100% { opacity: 1; }
@@ -671,20 +695,22 @@
 <body>
 
 <!-- ===== ドラクエ風オープニング画面 ===== -->
-<div id="opening-screen" onclick="closeOpening(true)">
+<div id="opening-screen" onclick="onOpeningTap()">
   <div class="op-stars" id="opStars"></div>
   <div class="op-logo-wrap">
     <div class="op-subtitle">FUSHIMI POST OFFICE</div>
     <div class="op-title-jp">伏見集荷<br>コース検索</div>
     <div class="op-title-sub">～ THE DELIVERY QUEST ～</div>
-    <!-- ハルケンブルグの絵とセリフ -->
+    <!-- ハルケンブルグの絵とセリフ（タップするまでは、絵の場所に「タップしてはじめる」を出す） -->
+    <div class="op-stage">
+    <div class="op-press" id="opPress">▼ タップしてはじめる ▼</div>
     <div class="op-hero">
       <img src="harukenburg.jpg?v=3" alt="ハルケンブルグ" width="900" height="560">
-      <div class="op-bubble">我らの意志はひとつ！<br>今日も全コース、集荷完了だ！</div>
+      <div class="op-bubble" id="opBubble" data-text="我らの意志はひとつ！&#10;今日も全コース、集荷完了だ！"></div>
+    </div>
     </div>
     <div class="op-divider"></div>
-    <div class="op-tagline">▶ 今日も集荷の旅へ出発！</div>
-    <div class="op-press">▼ タップしてはじめる ▼</div>
+    <div class="op-tagline" id="opTagline" data-text="▶ 今日も集荷の旅へ出発！"></div>
   </div>
   <div class="op-bottom-text">© FUSHIMI POSTMAN GUILD</div>
 </div>
@@ -902,8 +928,70 @@
     }, 1200);
   }
 
-  // 一定時間後に自動で閉じる（10秒）。タップ操作ではないので音は鳴らさない
-  setTimeout(() => closeOpening(false), 10000);
+  // ===== オープニングの場面（タップで始まる） =====
+  //   1回目のタップ：絵が「ドドーン」と出る → 吹き出し → セリフを1文字ずつ → 下の一言も1文字ずつ → ファンファーレで閉じる
+  //   場面の途中でもう一度タップ：すぐに閉じる
+  //   （iPhone はタップするまで音を出せないので、絵はタップしてから出す）
+  let openingSceneStarted = false;
+
+  // 文字を1文字ずつの span に分けて、見えない状態で置いておく（\n は改行）
+  function prepareTypeText(el) {
+    el.textContent = '';
+    const chars = [];
+    for (const ch of el.dataset.text) {
+      if (ch === '\n') { el.appendChild(document.createElement('br')); continue; }
+      const s = document.createElement('span');
+      s.className = 'op-char';
+      s.textContent = ch;
+      el.appendChild(s);
+      chars.push(s);
+    }
+    return chars;
+  }
+  const opBubbleChars = prepareTypeText(document.getElementById('opBubble'));
+  const opTaglineChars = prepareTypeText(document.getElementById('opTagline'));
+
+  // 1文字ずつ出す。文字が出るたびに「ピッ」と鳴らす
+  function typeChars(chars, speed, done) {
+    let i = 0;
+    (function next() {
+      if (openingClosed) return;
+      if (i >= chars.length) { if (done) done(); return; }
+      const s = chars[i++];
+      s.classList.add('on');
+      if (s.textContent.trim()) sfxTalk();
+      setTimeout(next, /[！、。]/.test(s.textContent) ? speed * 4 : speed);
+    })();
+  }
+
+  function startOpeningScene() {
+    openingSceneStarted = true;
+    const screen = document.getElementById('opening-screen');
+    document.getElementById('opPress').classList.add('hide');
+    document.getElementById('opBubble').closest('.op-hero').classList.add('show');
+    screen.classList.add('shake');
+    setTimeout(() => screen.classList.remove('shake'), 450);
+    sfxImpact();
+    setTimeout(() => {
+      if (openingClosed) return;
+      document.getElementById('opBubble').classList.add('show');
+      sfxBubble();
+      setTimeout(() => typeChars(opBubbleChars, 75, () => {
+        setTimeout(() => typeChars(opTaglineChars, 60, () => {
+          setTimeout(() => closeOpening(true), 1400);
+        }), 400);
+      }), 350);
+    }, 650);
+  }
+
+  window.onOpeningTap = function() {
+    if (openingClosed) return;
+    if (!openingSceneStarted) startOpeningScene();
+    else closeOpening(true);
+  };
+
+  // タップしないまま10秒たったら、音なしで閉じる
+  setTimeout(() => { if (!openingSceneStarted) closeOpening(false); }, 10000);
 
   // ========== ドラクエ風 効果音 (Web Audio API) ==========
   const AudioCtx = window.AudioContext || window.webkitAudioContext;
@@ -935,6 +1023,23 @@
     }
   }
 
+  // 絵が出るとき：「ドドーン」（低い音を重ねて、最後に長くうなる）
+  function sfxImpact() {
+    playTone(1800, 0.05, 'square', 0.06, 0);
+    playTone(98, 0.18, 'sawtooth', 0.20, 0);
+    playTone(82, 0.18, 'sawtooth', 0.20, 0.13);
+    playTone(65, 0.70, 'sawtooth', 0.22, 0.26);
+    playTone(49, 0.80, 'triangle', 0.25, 0.26);
+  }
+  // 吹き出しが出るとき：「ポン」
+  function sfxBubble() {
+    playTone(660, 0.05, 'square', 0.08, 0);
+    playTone(990, 0.08, 'square', 0.08, 0.05);
+  }
+  // セリフの1文字ごと：「ピッ」（ドラクエの会話のような音）
+  function sfxTalk() {
+    playTone(1320, 0.03, 'square', 0.05, 0);
+  }
   function sfxType() {
     playTone(880, 0.06, 'square', 0.08, 0);
     playTone(1200, 0.06, 'square', 0.06, 0.04);
