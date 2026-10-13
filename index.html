@@ -28,7 +28,7 @@
     min-width: 0;
   }
   /* === Claude Code のキャラクター（ヘッダー左上） === */
-  .cc-wrap { width: 62px; height: 40px; flex-shrink: 0; display: flex; justify-content: center; }
+  .cc-wrap { width: 58px; height: 40px; flex-shrink: 0; display: flex; justify-content: center; }
   .cc-mascot { display: flex; flex-direction: column; align-items: center; gap: 3px; text-decoration: none; padding-top: 4px; }
   .cc-mascot svg { width: 51px; height: 34.5px; shape-rendering: crispEdges; overflow: visible; }  /* 右の約15pxはノートパソコンが出る場所。中の絵は ccTyping が描く */
   .cc-mascot .cc-label { font-family: -apple-system, "Segoe UI", sans-serif; font-size: 7px; letter-spacing: 0.05em; color: #d97757; opacity: 0.8; white-space: nowrap; }
@@ -36,7 +36,7 @@
   /* === GitHub のマーク（ヘッダー左上、オレンジのキャラクターの右） ===
      横には動かず、その場で：タコの足をゆらゆら・ときどき首をかしげる・ときどき目をパチッ。タップすると1回転 */
   .gh-mascot { --gh-disc: #24292f; --gh-cat: #f0f2f5; --gh-text: #57606a; }   /* ← ヘッダーの背景色に合わせて変える */
-  .gh-wrap { width: 50px; height: 46px; flex-shrink: 0; display: flex; justify-content: center; align-items: flex-end; margin-right: 6px; }
+  .gh-wrap { width: 32px; height: 46px; flex-shrink: 0; display: flex; justify-content: center; align-items: flex-end; margin-right: 8px; }
   .gh-mascot { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 46px; gap: 3px; text-decoration: none; }
   .gh-mascot svg { width: 24px; height: 24px; overflow: visible; }   /* オレンジのキャラクター（足先まで24px）と上下の端をそろえる */
   .gh-label { font-family: -apple-system, "Segoe UI", sans-serif; font-size: 7px; letter-spacing: 0.05em; color: var(--gh-text); opacity: 0.8; white-space: nowrap; }
@@ -553,17 +553,69 @@
     opacity: 0;
     animation-delay: 1.0s;
   }
+  /* ハルケンブルグの絵（セリフの吹き出し付き） */
   .op-hero {
-    font-size: 64px;
-    margin: 24px 0 8px;
-    animation: opFadeIn 0.8s ease forwards, heroFloat 2s ease-in-out infinite alternate;
+    position: relative;
+    width: min(92vw, 420px);
+    margin: 22px auto 8px;
+    animation: opFadeIn 0.8s ease forwards;
     opacity: 0;
-    animation-delay: 1.2s, 2s;
-    filter: hue-rotate(310deg) saturate(5) brightness(1.1);
+    animation-delay: 1.2s;
   }
-  @keyframes heroFloat {
-    0% { transform: translateY(0px); }
-    100% { transform: translateY(-8px); }
+  .op-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #ffd700;
+    border-radius: 6px;
+    box-shadow: 0 0 18px rgba(255,140,0,0.45);
+  }
+  /* 吹き出し：左の人物（親指を立てている男性）の頭の上から */
+  .op-bubble {
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    max-width: 58%;
+    padding: 6px 9px;
+    background: #fff;
+    color: #111;
+    border: 2px solid #111;
+    border-radius: 14px;
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: clamp(10px, 3vw, 13px);
+    font-weight: 900;
+    line-height: 1.35;
+    text-align: left;
+    letter-spacing: 0;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
+    animation: opFadeIn 0.5s ease forwards, bubblePop 0.4s ease 1.9s;
+    opacity: 0;
+    animation-delay: 1.7s, 1.9s;
+  }
+  /* 吹き出しのしっぽ（男性の頭のほうへ） */
+  .op-bubble::after {
+    content: "";
+    position: absolute;
+    left: 28%;
+    bottom: -10px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #111;
+  }
+  .op-bubble::before {
+    content: "";
+    position: absolute;
+    left: calc(28% + 2px);
+    bottom: -6px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #fff;
+    z-index: 1;
+  }
+  @keyframes bubblePop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
   }
   .op-tagline {
     font-family: 'Courier New', monospace;
@@ -625,7 +677,11 @@
     <div class="op-subtitle">FUSHIMI POST OFFICE</div>
     <div class="op-title-jp">伏見集荷<br>コース検索</div>
     <div class="op-title-sub">～ THE DELIVERY QUEST ～</div>
-    <div class="op-hero">🚐</div>
+    <!-- ハルケンブルグの絵とセリフ -->
+    <div class="op-hero">
+      <img src="harukenburg.jpg?v=3" alt="ハルケンブルグ" width="900" height="560">
+      <div class="op-bubble">我らの意志はひとつ！<br>今日も全コース、集荷完了だ！</div>
+    </div>
     <div class="op-divider"></div>
     <div class="op-tagline">▶ 今日も集荷の旅へ出発！</div>
     <div class="op-press">▼ タップしてはじめる ▼</div>
